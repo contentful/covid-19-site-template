@@ -1,5 +1,6 @@
 /__tests__
 /yarn.lock
 /*.js
+/*.js.map
 /*.d.*
 !index.js
