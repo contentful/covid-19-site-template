@@ -1,10 +1,10 @@
 {
-  "name": "gatsby-contentful-starter",
+  "name": "covid-19-site-template",
   "description": "Starter Contentful Gatsby Blog",
   "version": "1.0.0",
-  "author": "Stefan Judis <stefanjudis@gmail.com>",
+  "author": "Contentful GmbH",
   "bugs": {
-    "url": "https://github.com/contentful-userland/gatsby-contentful-starter/issues"
+    "url": "https://github.com/contentful/covid-19-site-template"
   },
   "dependencies": {
     "gatsby-image": "^2.2.16",
@@ -33,16 +33,16 @@
     "rimraf": "^3.0.2",
     "yargs-parser": "^17.0.0"
   },
-  "homepage": "https://github.com/contentful-userland/gatsby-contentful-starter#readme",
+  "homepage": "https://github.com/contentful/covid-19-site-template",
   "keywords": [
     "gatsby",
     "contentful"
   ],
-  "license": "MIT",
+  "license": "unlicensed",
   "main": "n/a",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/contentful-userland/gatsby-contentful-starter.git"
+    "url": "git+https://github.com/contentful/covid-19-site-template.git"
   },
   "scripts": {
     "dev": "npm run develop",
