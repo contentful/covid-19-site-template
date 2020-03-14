@@ -7,15 +7,11 @@ interface GatsbyNodeTookit {
 
 export interface CountrySummaryNode {
   id: string
-  confirmed: {
-    value: number
-  }
-  deaths: {
-    value: number
-  }
-  recovered: {
-    value: number
-  }
+  lastUpdate: string
+  country: string
+  confirmed: number
+  deaths: number
+  recovered: number
   parent: null
   children: []
   internal: {
@@ -31,15 +27,11 @@ export function toCountrySummaryNode(
 ): CountrySummaryNode {
   const node = {
     id: kit.createNodeId(`${iso2}-summary`),
-    confirmed: {
-      value: result.data.confirmed.value,
-    },
-    deaths: {
-      value: result.data.deaths.value,
-    },
-    recovered: {
-      value: result.data.recovered.value,
-    },
+    lastUpdate: result.data.lastUpdate,
+    country: iso2,
+    confirmed: result.data.confirmed.value,
+    deaths: result.data.deaths.value,
+    recovered: result.data.recovered.value,
     parent: null,
     children: <never[] & { length: 0 }>[],
     internal: {

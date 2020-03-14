@@ -26,7 +26,6 @@ export const sourceNodes = (kit: any, pluginOptions: PluginOptions) => {
 
   pluginOptions.countries.map(async ({ iso2 }) => {
     let result
-    console.log('creating nodes')
     try {
       result = await apiClient.countries.getSummary({
         country: iso2,
