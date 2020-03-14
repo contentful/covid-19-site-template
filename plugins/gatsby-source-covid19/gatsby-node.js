@@ -53,14 +53,25 @@ exports.sourceNodes = function (kit, pluginOptions) {
     pluginOptions.countries.map(function (_a) {
         var iso2 = _a.iso2;
         return __awaiter(void 0, void 0, void 0, function () {
-            var result, node;
+            var result, e_1, node;
             return __generator(this, function (_b) {
                 switch (_b.label) {
-                    case 0: return [4 /*yield*/, apiClient.countries.getSummary({
-                            country: iso2,
-                        })];
+                    case 0:
+                        console.log('creating nodes');
+                        _b.label = 1;
                     case 1:
+                        _b.trys.push([1, 3, , 4]);
+                        return [4 /*yield*/, apiClient.countries.getSummary({
+                                country: iso2,
+                            })];
+                    case 2:
                         result = _b.sent();
+                        return [3 /*break*/, 4];
+                    case 3:
+                        e_1 = _b.sent();
+                        console.log(e_1);
+                        return [3 /*break*/, 4];
+                    case 4:
                         if (!result) {
                             return [2 /*return*/];
                         }

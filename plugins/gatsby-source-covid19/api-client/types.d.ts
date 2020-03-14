@@ -4,19 +4,21 @@ export interface CountryDetailRequest {
     country: string;
 }
 export interface CountrySummaryResponse {
-    confirmed: {
-        value: number;
-        detail: string;
+    data: {
+        confirmed: {
+            value: number;
+            detail: string;
+        };
+        recovered: {
+            value: number;
+            detail: string;
+        };
+        deaths: {
+            value: number;
+            detail: string;
+        };
+        lastUpdate: ISO8601Timestamp;
     };
-    recovered: {
-        value: number;
-        detail: string;
-    };
-    deaths: {
-        value: number;
-        detail: string;
-    };
-    lastUpdate: ISO8601Timestamp;
 }
 export interface CountryRegionDetail {
     provinceState: string | null;
