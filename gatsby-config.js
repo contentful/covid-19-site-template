@@ -18,7 +18,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-covid19',
       options: {
-        countries: [{ iso2: 'USA' }, { iso2: 'DE' }],
+        countries: [{ iso2: 'DE' }],
       },
     },
   ],
