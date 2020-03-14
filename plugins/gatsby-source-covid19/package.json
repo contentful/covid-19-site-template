@@ -1,0 +1,23 @@
+{
+  "name": "gatsby-source-mathdroid-covid19",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gatsby": "^2.19.43",
+    "typescript": "^3.8.3"
+  },
+  "peerDependencies": {
+    "gatsby": "^2.19.43"
+  },
+  "dependencies": {
+    "axios": "^0.19.2",
+    "gatsby-core-utils": "^1.0.33"
+  }
+}
