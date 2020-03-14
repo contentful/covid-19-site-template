@@ -4,13 +4,13 @@ function toCountrySummaryNode(kit, iso2, result) {
     var node = {
         id: kit.createNodeId(iso2 + "-summary"),
         confirmed: {
-            value: result.confirmed.value,
+            value: result.data.confirmed.value,
         },
         deaths: {
-            value: result.deaths.value,
+            value: result.data.deaths.value,
         },
         recovered: {
-            value: result.recovered.value,
+            value: result.data.recovered.value,
         },
         parent: null,
         children: [],

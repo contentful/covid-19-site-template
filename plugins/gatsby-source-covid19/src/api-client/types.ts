@@ -1,4 +1,3 @@
-
 type ISO8601Timestamp = string
 
 export interface CountryDetailRequest {
@@ -7,26 +6,28 @@ export interface CountryDetailRequest {
 }
 
 export interface CountrySummaryResponse {
-  confirmed: {
-    value: number
-    detail: string
+  data: {
+    confirmed: {
+      value: number
+      detail: string
+    }
+    recovered: {
+      value: number
+      detail: string
+    }
+    deaths: {
+      value: number
+      detail: string
+    }
+    lastUpdate: ISO8601Timestamp
   }
-  recovered: {
-    value: number
-    detail: string
-  }
-  deaths: {
-    value: number
-    detail: string
-  }
-  lastUpdate: ISO8601Timestamp
 }
 
 export interface CountryRegionDetail {
   provinceState: string | null
   countryRegion: string
   iso2: string
-  iso3 :string
+  iso3: string
   lat: number
   long: number
 

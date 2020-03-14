@@ -44,7 +44,7 @@ var CountryStore = /** @class */ (function () {
         return __awaiter(this, void 0, void 0, function () {
             var url;
             return __generator(this, function (_a) {
-                url = "/api/countries/" + input.country;
+                url = "https://covid19.mathdro.id/api/countries/" + input.country;
                 return [2 /*return*/, this.client.get(url)];
             });
         });

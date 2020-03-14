@@ -1,4 +1,4 @@
-import { AxiosInstance } from "axios";
+import { AxiosInstance } from 'axios';
 import { CountryDetailRequest, CountryRegionDetail, CountrySummaryResponse } from './types';
 export declare type CountryRegionDetailResponse = CountryRegionDetail[];
 export default class CountryStore {
