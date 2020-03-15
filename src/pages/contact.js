@@ -78,7 +78,7 @@ export default () => (
         <div className="md:w-1/3">
           <button
             className="shadow bg-indigo-400 hover:bg-idigo-400 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
-            type="button"
+            type="submit"
           >
             Send
           </button>
