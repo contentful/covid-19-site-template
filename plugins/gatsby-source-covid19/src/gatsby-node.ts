@@ -1,3 +1,4 @@
+import { SourceNodesArgs } from 'gatsby'
 import APIClient from './api-client'
 import { toCountrySummaryNode } from './nodes'
 
@@ -10,21 +11,19 @@ interface PluginOptions {
   countries: CountryConfiguration[]
 }
 
-export const sourceNodes = (kit: any, pluginOptions: PluginOptions) => {
-  const { actions } = kit
-  const { createNode } = actions
+export const onPreInit = () => {
+  console.log('Loaded gatsby-source-covid19')
+}
+
+export const sourceNodes = (kit: SourceNodesArgs, pluginOptions: PluginOptions) => {
+  const { actions: { createNode } } = kit
 
   const apiClient = new APIClient({
     baseURL: pluginOptions.baseURL,
   })
 
-  if (!pluginOptions.countries || pluginOptions.countries.length === 0) {
-    throw new Error(
-      'Must specify a list of countries in pluginOptions.countries'
-    )
-  }
-
-  pluginOptions.countries.map(async ({ iso2 }) => {
+  const countries = pluginOptions.countries || []
+  const promises = countries.map(async ({ iso2 }) => {
     let result
     try {
       result = await apiClient.countries.getSummary({
@@ -40,5 +39,7 @@ export const sourceNodes = (kit: any, pluginOptions: PluginOptions) => {
 
     createNode(node)
   })
+
+  return Promise.all(promises)
 }
 

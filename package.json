@@ -48,6 +48,7 @@
     "url": "git+https://github.com/contentful/covid-19-site-template.git"
   },
   "scripts": {
-    "develop": "gatsby develop"
+    "build:deps": "cd plugins/gatsby-source-covid19 && npm run build",
+    "develop": "npm run build:deps && gatsby develop"
   }
 }
