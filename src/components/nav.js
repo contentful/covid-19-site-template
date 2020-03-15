@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
-export default () => {
+const Nav = () => {
   const [hidden, setHidden] = useState(false)
   return (
-    <nav className="flex items-center justify-between flex-wrap p-6">
-      <div className="flex items-center flex-shrink-0 text-white mr-6">
-        <span className="font-semibold text-xl tracking-tight">
+    <nav className="flex flex-wrap items-center justify-between p-6">
+      <div className="flex items-center flex-shrink-0 mr-6 text-white">
+        <span className="text-xl font-semibold tracking-tight">
           Project covid19
         </span>
       </div>
@@ -15,10 +15,10 @@ export default () => {
           onClick={() => {
             setHidden(!hidden)
           }}
-          className="flex items-center px-3 py-2 border rounded text-teal-200 border-teal-400 hover:text-white hover:border-white"
+          className="flex items-center px-3 py-2 text-teal-200 border border-teal-400 rounded hover:text-white hover:border-white"
         >
           <svg
-            className="fill-current h-3 w-3"
+            className="w-3 h-3 fill-current"
             viewBox="0 0 20 20"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -36,7 +36,7 @@ export default () => {
           <Link
             to="/contact"
             activeClassName="text-white"
-            className="block mt-4 lg:inline-block lg:mt-0 text-teal-200 hover:text-white mr-4"
+            className="block mt-4 mr-4 text-teal-200 lg:inline-block lg:mt-0 hover:text-white"
           >
             contact
           </Link>
@@ -53,3 +53,5 @@ export default () => {
     </nav>
   )
 }
+
+export default Nav
