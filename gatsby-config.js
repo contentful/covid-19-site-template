@@ -17,7 +17,7 @@ module.exports = {
     },
     'gatsby-plugin-sharp',
     {
-      resolve: 'gatsby-source-covid19',
+      resolve: 'gatsby-source-mathdroid-covid19',
       options: {
         countries: [{ iso2: 'DE' }],
       },

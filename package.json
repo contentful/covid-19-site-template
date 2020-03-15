@@ -14,6 +14,7 @@
     "gatsby-plugin-react-helmet": "^3.1.22",
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-source-contentful": "^2.1.97",
+    "gatsby-source-mathdroid-covid19": "^0.1.0",
     "gatsby-transformer-remark": "^2.6.52",
     "gatsby-transformer-sharp": "^2.3.14",
     "lodash": "^4.17.15",
@@ -50,8 +51,7 @@
     "url": "git+https://github.com/contentful/covid-19-site-template.git"
   },
   "scripts": {
-    "build:deps": "cd plugins/gatsby-source-covid19 && npm install && npm run build",
-    "build": "npm run build:deps && gatsby build",
-    "develop": "npm run build:deps && gatsby develop"
+    "build": "gatsby build",
+    "develop": "gatsby develop"
   }
 }
