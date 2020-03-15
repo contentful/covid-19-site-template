@@ -1,30 +1,12 @@
 import React from 'react'
 import Layout from '../components/layout'
+import ArticleTeaserList from '../components/articleTeaserList'
 import { graphql, Link } from 'gatsby'
 
 export default ({ data }) => (
-  <Layout stats={data.allCovid19CountrySummary.nodes}>
+  <Layout stats={data.allCovid19CountrySummary.nodes} tags={data.tags.nodes} featuredArticles={data.featuredArticles.nodes[0].blogPosts} >
     <h1 className="uppercase text-xl semi-bold">Recently Published</h1>
-    <article className="mt-8 px-4">
-      <div>
-        <div>
-          <Link className="text-lg text-black font-bold no-underline hover:underline">
-            Something Somethings
-          </Link>
-        </div>
-        <p className="text-grey-darkest text-base leading-normal mt-1">
-          Lorem Ipsum is simply dummy text of the printing and typesetting
-          industry. Lorem Ipsum has been the industry's standard dummy text ever
-          since the 1500s, when an unknown printer took a galley of type and
-          scrambled it to make a type specimen book.
-        </p>
-        <div className="text-grey-darkest text-base leading-normal mt-2">
-          <Link className="text-grey-darker hover:text-black text-sm no-underline hover:underline">
-            Read this article →
-          </Link>
-        </div>
-      </div>
-    </article>
+    <ArticleTeaserList teasers={data.teasers.nodes} />
   </Layout>
 )
 
@@ -37,6 +19,35 @@ export const query = graphql`
         deaths
         confirmed
         recovered
+      }
+    }
+    teasers: allContentfulBlogPost {
+      nodes {
+        author {
+          name
+          contentful_id
+        }
+        title
+        teaser {
+          teaser
+        }
+        slug
+        createdAt
+      }
+    }
+    tags: allContentfulTag {
+      nodes {
+        name
+        slug
+        contentful_id
+      }
+    }
+    featuredArticles: allContentfulFeaturedBlogPosts {
+      nodes {
+        blogPosts {
+          slug
+          title
+        }
       }
     }
   }

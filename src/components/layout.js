@@ -1,8 +1,10 @@
 import React from 'react'
 import '../styles/tailwind.css'
 import Stat from './stat'
+import TagList from './tagList'
+import FeaturedArticles from './featuredArticles'
 import { Link } from 'gatsby'
-export default ({ children, stats }) => (
+export default ({ children, stats, tags, featuredArticles }) => (
   <>
     <header className="relative pb-24 bg-indigo-500">
       <div className="p-8 flex flex-wrap items-center justify-center container mx-auto max-w-screen-xl">
@@ -23,50 +25,8 @@ export default ({ children, stats }) => (
     <div className="flex flex-wrap px-16 py-24 container max-w-screen-xl mx-auto">
       <div className="w-full md:w-2/3">{children}</div>
       <div className="w-full md:w-1/3">
-        <section className="min-h-full">
-          <h3 className="uppercase text-xl semi-bold"> Top Gategories </h3>
-          <div className="mt-6">
-            <Link to="/" className="mr-2 text-sm rounded-lg p-2 bg-indigo-300">
-              News
-            </Link>
-            <Link to="/" className="mr-2 text-sm rounded-lg p-2 bg-indigo-300">
-              stats
-            </Link>
-            <Link to="/" className="mr-2 text-sm rounded-lg p-2 bg-indigo-300">
-              Nutrition
-            </Link>
-            <Link to="/" className="mr-2 text-sm rounded-lg p-2 bg-indigo-300">
-              Update
-            </Link>
-          </div>
-        </section>
-        <section className="mt-8 min-h-full">
-          <h3 className="uppercase text-xl semi-bold"> Popular Content</h3>
-          <div className="mt-6">
-            <ul>
-              <li>
-                <Link className="text-grey-darker hover:text-black text-sm no-underline hover:underline">
-                  → Popular Article 1
-                </Link>
-              </li>
-              <li>
-                <Link className="text-grey-darker hover:text-black text-sm no-underline hover:underline">
-                  → Popular Article 1
-                </Link>
-              </li>
-              <li>
-                <Link className="text-grey-darker hover:text-black text-sm no-underline hover:underline">
-                  → Popular Article 1
-                </Link>
-              </li>
-              <li>
-                <Link className="text-grey-darker hover:text-black text-sm no-underline hover:underline">
-                  → Popular Article 1
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <TagList tags={tags} />
+        <FeaturedArticles featuredArticles={featuredArticles} />
       </div>
     </div>
   </>
