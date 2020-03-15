@@ -1,5 +1,6 @@
 import { SourceNodesArgs, NodeInput } from 'gatsby'
-import { CountrySummaryResponse } from './api-client/types'
+import { CountrySummaryResponse } from '../api-client/types'
+import { ResolverContext } from './types'
 
 export interface CountrySummaryNode extends NodeInput {
   lastUpdate: string
@@ -30,4 +31,29 @@ export function toCountrySummaryNode(
   node.internal.contentDigest = kit.createContentDigest(JSON.stringify(node))
 
   return node
+}
+
+export default async function resolveCountryNodes(ctx: ResolverContext): Promise<void> {
+  const { pluginOptions, apiClient, nodeKit } = ctx
+  const { actions: { createNode } } = nodeKit
+
+  const countries = pluginOptions.countries || []
+  const promises = countries.map(async ({ iso2 }) => {
+    let result
+    try {
+      result = await apiClient.countries.getSummary({
+        country: iso2,
+      })
+    } catch (e) {
+      console.log(e)
+    }
+    if (!result) {
+      return
+    }
+    const node = toCountrySummaryNode(nodeKit, iso2, result)
+
+    createNode(node)
+  })
+
+  await Promise.all(promises)
 }
