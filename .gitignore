@@ -67,3 +67,4 @@ public
 .contentful.json
 .env*
 !.env.example
+.env
