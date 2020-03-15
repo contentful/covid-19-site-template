@@ -4,6 +4,7 @@ import Stat from './stat'
 import TagList from './tagList'
 import FeaturedArticles from './featuredArticles'
 import { useStaticQuery, graphql } from 'gatsby'
+import Nav from './nav'
 export default ({ children }) => {
   const { stats, tags, featuredArticles } = useStaticQuery(graphql`
     {
@@ -36,6 +37,7 @@ export default ({ children }) => {
   return (
     <>
       <header className="relative pb-24 bg-indigo-500">
+        <Nav />
         <div className="container flex flex-wrap items-center justify-center p-8 mx-auto max-w-screen-xl">
           {stats.nodes.map(summary => (
             <Stat summary={summary} />
