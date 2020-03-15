@@ -1,18 +1,19 @@
 import React from 'react'
-import Layout from '../components/layout'
 import { graphql } from 'gatsby'
+import Layout from '../components/layout'
 import ArticleTeaserList from '../components/articleTeaserList'
 
 export default ({ data }) => (
   <Layout>
-    <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} />
+    <h2>Blog Post</h2>
+    <ArticleTeaserList teasers={data.contentfulTag.blog_post || []} />
   </Layout>
 )
 
 export const query = graphql`
-  {
-    allContentfulBlogPost {
-      nodes {
+  query getTag($slug: String!) {
+    contentfulTag(slug: { eq: $slug }) {
+      blog_post {
         author {
           name
           contentful_id

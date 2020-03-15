@@ -17,20 +17,6 @@ export default ({ children }) => {
           recovered
         }
       }
-      teasers: allContentfulBlogPost {
-        nodes {
-          author {
-            name
-            contentful_id
-          }
-          title
-          teaser {
-            teaser
-          }
-          slug
-          createdAt
-        }
-      }
       tags: allContentfulTag {
         nodes {
           name
@@ -67,12 +53,12 @@ export default ({ children }) => {
         </svg>
       </header>
       <div className="flex flex-wrap px-16 py-24 container max-w-screen-xl mx-auto">
-        <div className="w-full md:w-2/3">
-          <ArticleTeaserList teasers={teasers.nodes} />
-        </div>
+        <div className="w-full md:w-2/3">{children}</div>
         <div className="w-full md:w-1/3">
           <TagList tags={tags.nodes} />
-          <FeaturedArticles featuredArticles={featuredArticles.nodes[0].blogPosts} />
+          <FeaturedArticles
+            featuredArticles={featuredArticles.nodes[0].blogPosts}
+          />
         </div>
       </div>
     </>
