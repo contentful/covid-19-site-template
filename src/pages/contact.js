@@ -43,7 +43,7 @@ export default () => (
             id="grid-last-name"
             type="text"
             placeholder="Doe"
-            placeholder="last_name"
+            name="last_name"
           />
         </div>
       </div>
