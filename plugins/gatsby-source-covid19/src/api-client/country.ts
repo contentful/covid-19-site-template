@@ -5,7 +5,7 @@ import {
   CountrySummaryResponse,
 } from './types'
 
-export type CountryRegionDetailResponse = CountryRegionDetail[]
+export type CountryRegionDetailResponse = { data: CountryRegionDetail[] }
 
 export default class CountryStore {
   constructor(private client: Pick<AxiosInstance, 'get'>) {}
