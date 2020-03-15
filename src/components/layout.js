@@ -2,9 +2,12 @@ import React from 'react'
 import '../styles/tailwind.css'
 import Stat from './stat'
 import { Link } from 'gatsby'
+import Nav from './nav'
+
 export default ({ children, stats }) => (
   <>
     <header className="relative pb-24 bg-indigo-500">
+      <Nav />
       <div className="p-8 flex flex-wrap items-center justify-center container mx-auto max-w-screen-xl">
         {stats.map(summary => (
           <Stat summary={summary} />
