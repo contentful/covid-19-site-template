@@ -49,6 +49,7 @@
   },
   "scripts": {
     "build:deps": "cd plugins/gatsby-source-covid19 && npm run build",
+    "build": "cd plugins/gatsby-source-covid19 && gatsby build",
     "develop": "npm run build:deps && gatsby develop"
   }
 }
