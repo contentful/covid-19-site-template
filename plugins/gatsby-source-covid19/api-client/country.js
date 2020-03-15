@@ -35,30 +35,60 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var api_client_1 = __importDefault(require("./api-client"));
-var countries_1 = __importDefault(require("./nodes/countries"));
-var global_1 = __importDefault(require("./nodes/global"));
-exports.sourceNodes = function (nodeKit, pluginOptions) { return __awaiter(void 0, void 0, void 0, function () {
-    var apiClient, ctx;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                apiClient = new api_client_1.default({
-                    baseURL: pluginOptions.baseURL,
-                });
-                ctx = { nodeKit: nodeKit, pluginOptions: pluginOptions, apiClient: apiClient };
-                return [4 /*yield*/, global_1.default(ctx)];
-            case 1:
-                _a.sent();
-                return [4 /*yield*/, countries_1.default(ctx)];
-            case 2:
-                _a.sent();
-                return [2 /*return*/];
-        }
-    });
-}); };
-//# sourceMappingURL=gatsby-node.js.map
+var CountryStore = /** @class */ (function () {
+    function CountryStore(client) {
+        this.client = client;
+    }
+    CountryStore.prototype.getSummary = function (input) {
+        return __awaiter(this, void 0, void 0, function () {
+            var url;
+            return __generator(this, function (_a) {
+                url = "https://covid19.mathdro.id/api/countries/" + input.country;
+                return [2 /*return*/, this.client.get(url)];
+            });
+        });
+    };
+    /**
+     * Cases per region in the provided country sorted by confirmed cases
+     * @param input
+     */
+    CountryStore.prototype.getConfirmed = function (input) {
+        return __awaiter(this, void 0, void 0, function () {
+            var url;
+            return __generator(this, function (_a) {
+                url = "/api/countries/" + input.country + "/confirmed";
+                return [2 /*return*/, this.client.get(url)];
+            });
+        });
+    };
+    /**
+     * Cases per region in the provided country sorted by death toll
+     * @param input
+     */
+    CountryStore.prototype.getDeaths = function (input) {
+        return __awaiter(this, void 0, void 0, function () {
+            var url;
+            return __generator(this, function (_a) {
+                url = "/api/countries/" + input.country + "/confirmed";
+                return [2 /*return*/, this.client.get(url)];
+            });
+        });
+    };
+    /**
+     * Cases per region in the provided country sorted by recovered cases
+     * @param input
+     */
+    CountryStore.prototype.getRecovered = function (input) {
+        return __awaiter(this, void 0, void 0, function () {
+            var url;
+            return __generator(this, function (_a) {
+                url = "/api/countries/" + input.country + "/confirmed";
+                return [2 /*return*/, this.client.get(url)];
+            });
+        });
+    };
+    return CountryStore;
+}());
+exports.default = CountryStore;
+//# sourceMappingURL=country.js.map
