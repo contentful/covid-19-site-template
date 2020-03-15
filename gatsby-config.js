@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Contentful starter',
+    title: 'Gatsby Contentful CoVid Template',
   },
   plugins: [
     'gatsby-transformer-remark',
@@ -21,5 +21,12 @@ module.exports = {
         countries: [{ iso2: 'DE' }],
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: process.env.CONTENTFUL_SPACE_ID,
+        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    }
   ],
 }
