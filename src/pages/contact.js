@@ -6,7 +6,7 @@ export default () => (
     <h2 className="text-2xl font-semibold"> Contact Us </h2>
     <form
       method="post"
-      netlify-honeypot="bot-field"
+      name="contact"
       data-netlify="true"
       className="w-full max-w-lg mt-8"
     >
@@ -69,7 +69,7 @@ export default () => (
             Message
           </label>
           <textarea
-            className="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none resize-none  no-resize focus:outline-none focus:bg-white focus:border-gray-500"
+            className="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none resize-none no-resize focus:outline-none focus:bg-white focus:border-gray-500"
             id="message"
           ></textarea>
         </div>
