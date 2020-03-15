@@ -6,9 +6,11 @@ const Nav = () => {
   return (
     <nav className="flex flex-wrap items-center justify-between p-6">
       <div className="flex items-center flex-shrink-0 mr-6 text-white">
-        <span className="text-xl font-semibold tracking-tight">
-          Project covid19
-        </span>
+        <Link to="/">
+          <span className="text-xl font-semibold tracking-tight">
+            Project covid19
+          </span>
+        </Link>
       </div>
       <div className="block lg:hidden">
         <button
