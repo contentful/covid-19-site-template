@@ -18,7 +18,7 @@
     "esModuleInterop": true,
     "noEmit": false,
     "noEmitOnError": true,
-    "outDir": ".",
+    "outDir": "./built",
     "skipLibCheck": true
   },
   "include": ["./src/**/*"],
