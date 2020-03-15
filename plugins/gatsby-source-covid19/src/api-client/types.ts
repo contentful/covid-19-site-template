@@ -1,23 +1,26 @@
-type ISO8601Timestamp = string
+export type ISO8601Timestamp = string
+export type ISO2CountryCode = string
+export type ISO3CountryCode = string
+export type ISOCountryCode = ISO2CountryCode | ISO3CountryCode
+export type URLString = string
 
 export interface CountryDetailRequest {
-  /** An ISO2 or ISO3 country string */
-  country: string
+  country: ISOCountryCode
 }
 
 export interface CountrySummaryResponse {
   data: {
     confirmed: {
       value: number
-      detail: string
+      detail: URLString
     }
     recovered: {
       value: number
-      detail: string
+      detail: URLString
     }
     deaths: {
       value: number
-      detail: string
+      detail: URLString
     }
     lastUpdate: ISO8601Timestamp
   }
@@ -26,8 +29,8 @@ export interface CountrySummaryResponse {
 export interface CountryRegionDetail {
   provinceState: string | null
   countryRegion: string
-  iso2: string
-  iso3: string
+  iso2: ISO2CountryCode
+  iso3: ISO3CountryCode
   lat: number
   long: number
 
