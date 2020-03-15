@@ -35,30 +35,55 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
 Object.defineProperty(exports, "__esModule", { value: true });
-var api_client_1 = __importDefault(require("./api-client"));
-var countries_1 = __importDefault(require("./nodes/countries"));
-var global_1 = __importDefault(require("./nodes/global"));
-exports.sourceNodes = function (nodeKit, pluginOptions) { return __awaiter(void 0, void 0, void 0, function () {
-    var apiClient, ctx;
-    return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0:
-                apiClient = new api_client_1.default({
-                    baseURL: pluginOptions.baseURL,
-                });
-                ctx = { nodeKit: nodeKit, pluginOptions: pluginOptions, apiClient: apiClient };
-                return [4 /*yield*/, global_1.default(ctx)];
-            case 1:
-                _a.sent();
-                return [4 /*yield*/, countries_1.default(ctx)];
-            case 2:
-                _a.sent();
-                return [2 /*return*/];
-        }
+function toGlobalSummaryNode(kit, result) {
+    var node = {
+        id: kit.createNodeId("global-summary"),
+        lastUpdate: result.data.lastUpdate,
+        confirmed: result.data.confirmed.value,
+        deaths: result.data.deaths.value,
+        recovered: result.data.recovered.value,
+        image: {
+            src: result.data.image
+        },
+        internal: {
+            type: 'Covid19GlobalSummary',
+            contentDigest: '',
+        },
+    };
+    node.internal.contentDigest = kit.createContentDigest(JSON.stringify(node));
+    return node;
+}
+exports.toGlobalSummaryNode = toGlobalSummaryNode;
+function resolveGlobalNodes(ctx) {
+    return __awaiter(this, void 0, void 0, function () {
+        var apiClient, nodeKit, createNode, result, e_1, node;
+        return __generator(this, function (_a) {
+            switch (_a.label) {
+                case 0:
+                    apiClient = ctx.apiClient, nodeKit = ctx.nodeKit;
+                    createNode = nodeKit.actions.createNode;
+                    _a.label = 1;
+                case 1:
+                    _a.trys.push([1, 3, , 4]);
+                    return [4 /*yield*/, apiClient.global.getSummary()];
+                case 2:
+                    result = _a.sent();
+                    return [3 /*break*/, 4];
+                case 3:
+                    e_1 = _a.sent();
+                    console.log(e_1);
+                    return [3 /*break*/, 4];
+                case 4:
+                    if (!result) {
+                        return [2 /*return*/];
+                    }
+                    node = toGlobalSummaryNode(nodeKit, result);
+                    createNode(node);
+                    return [2 /*return*/];
+            }
+        });
     });
-}); };
-//# sourceMappingURL=gatsby-node.js.map
+}
+exports.default = resolveGlobalNodes;
+//# sourceMappingURL=global.js.map
