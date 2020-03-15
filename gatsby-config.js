@@ -1,3 +1,4 @@
+require('dotenv').config()
 module.exports = {
   siteMetadata: {
     title: 'Gatsby Contentful CoVid Template',
@@ -24,9 +25,9 @@ module.exports = {
     {
       resolve: `gatsby-source-contentful`,
       options: {
-        spaceId: process.env.CONTENTFUL_SPACE_ID,
-        accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+        spaceId: process.env.CF_COVID_SPACE_ID,
+        accessToken: process.env.CF_COVID_ACCESS_TOKEN,
       },
-    }
+    },
   ],
 }

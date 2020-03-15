@@ -1,6 +1,8 @@
 import { AxiosInstance } from 'axios';
 import { CountryRegionDetail, URLString, ISO8601Timestamp } from './types';
-export declare type CountryRegionDetailResponse = CountryRegionDetail[];
+export declare type CountryRegionDetailResponse = {
+    data: CountryRegionDetail[];
+};
 export interface GlobalSummaryResponse {
     data: {
         confirmed: {

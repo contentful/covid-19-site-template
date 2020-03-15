@@ -1,6 +1,8 @@
 import { AxiosInstance } from 'axios';
 import { CountryDetailRequest, CountryRegionDetail, CountrySummaryResponse } from './types';
-export declare type CountryRegionDetailResponse = CountryRegionDetail[];
+export declare type CountryRegionDetailResponse = {
+    data: CountryRegionDetail[];
+};
 export default class CountryStore {
     private client;
     constructor(client: Pick<AxiosInstance, 'get'>);
