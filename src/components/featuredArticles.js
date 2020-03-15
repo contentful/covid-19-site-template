@@ -7,7 +7,7 @@ export default ({ children, featuredArticles }) => (
     <div className="mt-6">
       <ul>
         {
-          featuredArticles.map(featuredArticle => <FeaturedArticleLink featuredArticle={featuredArticle} key={featuredArticle.contentful_id} />)
+          featuredArticles.map(featuredArticle => <li key={featuredArticle.contentful_id}><FeaturedArticleLink featuredArticle={featuredArticle} key={featuredArticle.contentful_id} /></li>)
         }
       </ul>
     </div>
