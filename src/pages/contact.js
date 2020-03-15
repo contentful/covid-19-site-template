@@ -57,9 +57,7 @@ export default () => (
             id="email"
             type="email"
           />
-          <p className="text-xs italic text-gray-600">
-            Some tips - as long as needed
-          </p>
+          <p className="text-xs italic text-gray-600">e.g: em@example.com</p>
         </div>
       </div>
       <div className="flex flex-wrap mb-6 -mx-3">
