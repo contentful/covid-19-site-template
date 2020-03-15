@@ -1,5 +1,5 @@
 import React from 'react'
-import ArticleTeaser from '../components/articleTeaser'
+import ArticleTeaser from './articleTeaser'
 
 export default ({ children, teasers }) => (
   <>

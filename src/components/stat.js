@@ -1,4 +1,4 @@
-import React from 'React'
+import React from 'react'
 import { FlagIcon } from 'react-flag-kit'
 export default ({ summary }) => {
   return (
