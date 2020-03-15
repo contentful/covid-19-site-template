@@ -68,3 +68,6 @@ public
 .env*
 !.env.example
 .env
+
+# contentful cli
+contentful-import*

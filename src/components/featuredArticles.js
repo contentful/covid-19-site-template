@@ -1,5 +1,5 @@
 import React from 'react'
-import FeaturedArticleLink from '../components/featuredArticleLink'
+import FeaturedArticleLink from './featuredArticleLink'
 
 export default ({ children, featuredArticles }) => (
   <section className="mt-8">

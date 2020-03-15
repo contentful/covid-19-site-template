@@ -1,5 +1,5 @@
 import React from 'react'
-import Tag from '../components/Tag'
+import Tag from './tag'
 
 export default ({ tags }) => (
   <section className="mt-8">
