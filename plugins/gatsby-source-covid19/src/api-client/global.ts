@@ -5,7 +5,7 @@ import {
   ISO8601Timestamp,
 } from './types'
 
-export type CountryRegionDetailResponse = CountryRegionDetail[]
+export type CountryRegionDetailResponse = { data: CountryRegionDetail[] }
 
 export interface GlobalSummaryResponse {
   data: {
