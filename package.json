@@ -51,6 +51,7 @@
     "url": "git+https://github.com/contentful/covid-19-site-template.git"
   },
   "scripts": {
+    "setup": "node bin/setup",
     "build": "gatsby build",
     "develop": "gatsby develop"
   }
