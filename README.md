@@ -1,19 +1,13 @@
 # gatsby-contentful-starter
 
-Gatsby [Contentful](https://www.contentful.com) starter for creating a blog
+Gatsby [Contentful](https://www.contentful.com) starter for creating a covid-19 info website
 
+TODO: change this
 ![The index page of the starter blog](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/screenshot.jpg "The index page of the starter blog")
 
 Static sites are scalable, secure and have very little required maintenance. They come with a drawback though. Not everybody feels good editing files, building a project and uploading it somewhere. This is where Contentful comes into play.
 
 With Contentful and Gatsby you can connect your favorite static site generator with an API that provides an easy to use interface for people writing content and automate the publishing using services like [Travis CI](https://travis-ci.org/) or [Netlify](https://www.netlify.com/).
-
-## Features
-
-* Simple content model and structure. Easy to adjust to your needs.
-* Contentful integration using our [Sync API](https://www.contentful.com/developers/docs/references/content-delivery-api/#/reference/synchronization/initial-synchronization-of-entries-of-a-specific-content-type)
-* Using our [Delivery API](https://www.contentful.com/developers/docs/references/content-delivery-api/).
-* Responsive/adaptive images via [gatsby-image](https://www.gatsbyjs.org/packages/gatsby-image/)
 
 ## Contribution
 
@@ -30,19 +24,21 @@ Install [Yarn](https://yarnpkg.com/en/docs/install) (if you haven't already).
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:contentful-userland/gatsby-contentful-starter.git
+$ git clone git@github.com:contentful/covid-19-site-template.git
 $ yarn install
 ```
 
 Or use the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli).
 
 ```
-$ gatsby new contentful-starter https://github.com/contentful-userland/gatsby-contentful-starter
+$ gatsby new covid-19-site-template
+ https://github.com/contentful/covid-19-site-template
+
 ```
 
 ### Set up of the needed content model and create a configuration file
 
-This project comes with a Contentful setup command `yarn run setup`.
+This project comes with a Contentful setup command `yarn setup`.
 
 ![Command line dialog of the yarn run setup command](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/setup.jpg "Command line dialog of the yarn run setup command")
 
@@ -54,28 +50,17 @@ This command will ask you for a space ID, and access tokens for the Contentful M
 
 This project comes with a few handy commands for linting and code fixing. The most important ones are the ones to develop and ship code. You can find the most important commands below.
 
-### `yarn run dev`
+### `yarn develop`
 
 Run in the project locally.
 
-### `yarn run build`
+### `yarn build`
 
 Run a production build into `./public`. The result is ready to be put on any static hosting you prefer.
 
-### `yarn run deploy`
-
-Run a production build into `./public` and publish the site to GitHub pages.
-
-### `yarn run cleanup-repository`
-
-Removes all dependencies, scripts and data from the installation script.
-
 ## Roadmap
 
-- [x] [make the starter completely responsive](https://github.com/contentful-userland/gatsby-contentful-starter/issues/2)
-- [ ] [include tags](https://github.com/contentful-userland/gatsby-contentful-starter/issues/3)
-- [x] [support traced placeholders](https://github.com/contentful-userland/gatsby-contentful-starter/issues/4)
-- [ ] [add i18n](https://github.com/contentful-userland/gatsby-contentful-starter/issues/6)
+- [] Add Search
 
 ## Other resources
 
