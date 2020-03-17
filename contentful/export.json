@@ -512,6 +512,84 @@
           }
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "microcopy",
+        "type": "ContentType",
+        "createdAt": "2020-03-17T13:23:35.327Z",
+        "updatedAt": "2020-03-17T13:23:35.740Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 1,
+        "publishedAt": "2020-03-17T13:23:35.740Z",
+        "firstPublishedAt": "2020-03-17T13:23:35.740Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 2,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        }
+      },
+      "displayField": "key",
+      "name": "Microcopy",
+      "description": "",
+      "fields": [
+        {
+          "id": "key",
+          "name": "Key",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "value",
+          "name": "Value",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
     }
   ],
   "editorInterfaces": [
@@ -796,6 +874,62 @@
           "widgetNamespace": "builtin"
         }
       ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "yg3gz5m6hgo7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 2,
+        "createdAt": "2020-03-17T13:23:35.815Z",
+        "createdBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-17T13:23:36.493Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "microcopy",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "key",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "value",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        }
+      ]
     }
   ],
   "entries": [
@@ -937,7 +1071,7 @@
         "id": "6K3PGAPrHyqjWd2yyavA1P",
         "type": "Entry",
         "createdAt": "2020-03-15T12:30:33.137Z",
-        "updatedAt": "2020-03-15T12:32:35.067Z",
+        "updatedAt": "2020-03-16T15:12:19.170Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -959,11 +1093,11 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
           }
         },
         "publishedCounter": 1,
-        "version": 58,
+        "version": 74,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1302,7 +1436,7 @@
         "id": "3j4xhIF4llpRBlWnpRnGOY",
         "type": "Entry",
         "createdAt": "2020-03-15T13:42:19.513Z",
-        "updatedAt": "2020-03-15T13:42:29.850Z",
+        "updatedAt": "2020-03-16T15:11:50.821Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1310,8 +1444,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 3,
-        "publishedAt": "2020-03-15T13:42:29.850Z",
+        "publishedVersion": 5,
+        "publishedAt": "2020-03-16T15:11:50.821Z",
         "firstPublishedAt": "2020-03-15T13:42:29.850Z",
         "createdBy": {
           "sys": {
@@ -1324,16 +1458,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
           }
         },
-        "publishedCounter": 1,
-        "version": 4,
+        "publishedCounter": 2,
+        "version": 6,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
           }
         },
         "contentType": {
@@ -1356,8 +1490,1348 @@
                 "linkType": "Entry",
                 "id": "5fYDabHM0EsdFhVq2uSoSH"
               }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "1LJQrJYv5EPYNUMVIFMYwh"
+              }
             }
           ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "1LJQrJYv5EPYNUMVIFMYwh",
+        "type": "Entry",
+        "createdAt": "2020-03-16T14:58:24.578Z",
+        "updatedAt": "2020-03-16T15:18:54.244Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 78,
+        "publishedAt": "2020-03-16T15:18:54.244Z",
+        "firstPublishedAt": "2020-03-16T15:11:11.012Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 79,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "blogPost"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Important Resources"
+        },
+        "slug": {
+          "en-US": "important-resources"
+        },
+        "heroImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "5GkKXHpnHDGd8N0Jca9c4U"
+            }
+          }
+        },
+        "teaser": {
+          "en-US": "Here are a list of resources to stay updated on COVID-19. "
+        },
+        "body": {
+          "en-US": {
+            "data": {
+            },
+            "content": [
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "Updates from World Health Organization: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                              "uri": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "hyperlink"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "World Health Organization Dashboard: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                              "uri": "https://who.maps.arcgis.com/apps/opsdashboard/index.html#/ead3c6475654481ca51c248d52ab9c61"
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "https://who.maps.arcgis.com/apps/opsdashboard/index.html#/ead3c6475654481ca51c248d52ab9c61",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "hyperlink"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  },
+                  {
+                    "data": {
+                    },
+                    "content": [
+                      {
+                        "data": {
+                        },
+                        "content": [
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "COVID-19 Infographics: ",
+                            "nodeType": "text"
+                          },
+                          {
+                            "data": {
+                              "uri": "https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/"
+                            },
+                            "content": [
+                              {
+                                "data": {
+                                },
+                                "marks": [
+                                ],
+                                "value": "https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/",
+                                "nodeType": "text"
+                              }
+                            ],
+                            "nodeType": "hyperlink"
+                          },
+                          {
+                            "data": {
+                            },
+                            "marks": [
+                            ],
+                            "value": "",
+                            "nodeType": "text"
+                          }
+                        ],
+                        "nodeType": "paragraph"
+                      }
+                    ],
+                    "nodeType": "list-item"
+                  }
+                ],
+                "nodeType": "ordered-list"
+              },
+              {
+                "data": {
+                },
+                "content": [
+                  {
+                    "data": {
+                    },
+                    "marks": [
+                    ],
+                    "value": "",
+                    "nodeType": "text"
+                  }
+                ],
+                "nodeType": "paragraph"
+              }
+            ],
+            "nodeType": "document"
+          }
+        },
+        "tags": {
+          "en-US": [
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "68FoLBS9lyqcTWKAzRaWFZ"
+              }
+            },
+            {
+              "sys": {
+                "type": "Link",
+                "linkType": "Entry",
+                "id": "6BdYBgbux09RuYtAT78Vig"
+              }
+            }
+          ]
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "3SkU3AyZcX4buH2jbDOimr",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:30:26.994Z",
+        "updatedAt": "2020-03-17T13:30:49.225Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 29,
+        "publishedAt": "2020-03-17T13:30:49.225Z",
+        "firstPublishedAt": "2020-03-17T13:30:49.225Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 30,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "latest-updates"
+        },
+        "value": {
+          "en-US": "Latest CoVid-19 Updates"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "6u6FMBoF1KpZvHvUOuCKos",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:32:07.474Z",
+        "updatedAt": "2020-03-17T13:32:19.773Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 15,
+        "publishedAt": "2020-03-17T13:32:19.773Z",
+        "firstPublishedAt": "2020-03-17T13:32:19.773Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 16,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "featured-articles"
+        },
+        "value": {
+          "en-US": "Featured Articles"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "4mhAnMdAIspnvsKVfMProF",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:37:18.786Z",
+        "updatedAt": "2020-03-17T13:37:24.407Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-03-17T13:37:24.407Z",
+        "firstPublishedAt": "2020-03-17T13:37:24.407Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "menu"
+        },
+        "value": {
+          "en-US": "Menu"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "6jR5bZZspkwDroYExD1OWi",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:37:47.901Z",
+        "updatedAt": "2020-03-17T13:37:56.563Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-17T13:37:56.563Z",
+        "firstPublishedAt": "2020-03-17T13:37:56.563Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "contact"
+        },
+        "value": {
+          "en-US": "Contact"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "7zRsRGeC7LxMwZUdRoLDQl",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:38:56.882Z",
+        "updatedAt": "2020-03-17T13:39:03.456Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-03-17T13:39:03.456Z",
+        "firstPublishedAt": "2020-03-17T13:39:03.456Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "tracker"
+        },
+        "value": {
+          "en-US": "Covid-19 Status Tracker"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "40yUefyhSNI4Qj2L1YuZ0b",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:39:40.116Z",
+        "updatedAt": "2020-03-17T13:39:50.236Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 12,
+        "publishedAt": "2020-03-17T13:39:50.236Z",
+        "firstPublishedAt": "2020-03-17T13:39:50.236Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 13,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "last-updated"
+        },
+        "value": {
+          "en-US": "Last Updated"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "6XCT512FM4h3EqyohRP3mu",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:40:19.662Z",
+        "updatedAt": "2020-03-17T13:40:27.917Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-03-17T13:40:27.917Z",
+        "firstPublishedAt": "2020-03-17T13:40:27.917Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "confirmed"
+        },
+        "value": {
+          "en-US": "Confirmed cases"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "6gUjalPGIIx0deKIpAlEfG",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:40:44.875Z",
+        "updatedAt": "2020-03-17T13:44:37.465Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-03-17T13:44:37.465Z",
+        "firstPublishedAt": "2020-03-17T13:44:37.465Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "recovered"
+        },
+        "value": {
+          "en-US": "Recovered"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "1HKRavLshJjeGEv2hoku0q",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:45:09.199Z",
+        "updatedAt": "2020-03-17T13:45:39.400Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-03-17T13:45:39.400Z",
+        "firstPublishedAt": "2020-03-17T13:45:39.400Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "deaths"
+        },
+        "value": {
+          "en-US": "Deaths"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "3cOuxwhkBz8euUzgIlGLRv",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:46:29.117Z",
+        "updatedAt": "2020-03-17T13:46:38.204Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 4,
+        "publishedAt": "2020-03-17T13:46:38.204Z",
+        "firstPublishedAt": "2020-03-17T13:46:38.204Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 5,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "tags"
+        },
+        "value": {
+          "en-US": "Top Categories"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "2DJUlpuCveayHNUvLadzyW",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:49:52.023Z",
+        "updatedAt": "2020-03-17T13:50:03.818Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 16,
+        "publishedAt": "2020-03-17T13:50:03.818Z",
+        "firstPublishedAt": "2020-03-17T13:50:03.818Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 17,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "contact-us"
+        },
+        "value": {
+          "en-US": "Contact Us"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "66jNMNzh4D96kWTzC1ySS",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:50:23.848Z",
+        "updatedAt": "2020-03-17T13:50:32.714Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-17T13:50:32.714Z",
+        "firstPublishedAt": "2020-03-17T13:50:32.714Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "first-name"
+        },
+        "value": {
+          "en-US": "First Name"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "7Ah6BCLktGVt8gLguazZtf",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:50:47.713Z",
+        "updatedAt": "2020-03-17T13:50:57.478Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-03-17T13:50:57.478Z",
+        "firstPublishedAt": "2020-03-17T13:50:57.478Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "last-name"
+        },
+        "value": {
+          "en-US": "Last Name"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "Ry5Z1zymUWv8FyE0v1o8b",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:51:27.145Z",
+        "updatedAt": "2020-03-17T13:53:21.772Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2020-03-17T13:53:21.772Z",
+        "firstPublishedAt": "2020-03-17T13:53:21.772Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "email-example"
+        },
+        "value": {
+          "en-US": "e.g: em@example.com"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "5rw6DkqyqGsyQhcEPWDwMh",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:51:32.690Z",
+        "updatedAt": "2020-03-17T13:53:42.328Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 7,
+        "publishedAt": "2020-03-17T13:53:42.328Z",
+        "firstPublishedAt": "2020-03-17T13:53:42.328Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 8,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "message"
+        },
+        "value": {
+          "en-US": "Message"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "5H205HEEk1ebu0fy8NkUzo",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:51:32.735Z",
+        "updatedAt": "2020-03-17T13:52:36.363Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-03-17T13:52:36.363Z",
+        "firstPublishedAt": "2020-03-17T13:52:36.363Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "email"
+        },
+        "value": {
+          "en-US": "E-Mail"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "3YGvv5DyR1EbdKFZIB6s7W",
+        "type": "Entry",
+        "createdAt": "2020-03-17T13:54:05.777Z",
+        "updatedAt": "2020-03-17T13:54:15.890Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-17T13:54:15.890Z",
+        "firstPublishedAt": "2020-03-17T13:54:15.890Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "send-button"
+        },
+        "value": {
+          "en-US": "Send"
         }
       }
     }
@@ -1638,6 +3112,73 @@
               }
             },
             "fileName": "felix-russell-saw-112140.jpg",
+            "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "5GkKXHpnHDGd8N0Jca9c4U",
+        "type": "Asset",
+        "createdAt": "2020-03-16T15:10:40.612Z",
+        "updatedAt": "2020-03-16T15:10:55.246Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 5,
+        "publishedAt": "2020-03-16T15:10:55.246Z",
+        "firstPublishedAt": "2020-03-16T15:10:55.246Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 6,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "7JwQsytwd8kvnc0VwIqBhq"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "earth"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/yg3gz5m6hgo7/5GkKXHpnHDGd8N0Jca9c4U/dca00d4ac5cc0c31d4cce556ad72733f/earth.jpg",
+            "details": {
+              "size": 292550,
+              "image": {
+                "width": 620,
+                "height": 310
+              }
+            },
+            "fileName": "earth.jpg",
             "contentType": "image/jpeg"
           }
         }

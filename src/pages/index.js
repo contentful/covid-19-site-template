@@ -15,7 +15,8 @@ export default ({ data }) => (
       siteLocale={`en-US`}
       twitterUsername={`contentful`}
     />
-    <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} />
+
+    <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} microcopies={data.microcopies.nodes} />
   </Layout>
 )
 
@@ -39,6 +40,13 @@ export const query = graphql`
         }
         slug
         createdAt(formatString: "DD MMM YYYY")
+      }
+    }
+
+    microcopies: allContentfulMicrocopy {
+      nodes {
+        key
+        value
       }
     }
   }
