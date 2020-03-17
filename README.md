@@ -2,7 +2,7 @@
 
 Gatsby [Contentful](https://www.contentful.com) starter for creating a website for covid-19 information 
 
-[Image goes here]
+![The index page of the covid-19 starter blog](./screenshot.png "The index page of the covid-19 starter blog")
 
 If you have information to share during the Covid-19 pandemic, we’re here to help. This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine.
 
