@@ -2,8 +2,8 @@ import React from 'react'
 import FeaturedArticleLink from './featuredArticleLink'
 
 export default ({ children, featuredArticles }) => (
-  <section className="mt-8">
-    <h2 id="featArticles" className="text-xl semi-bold">Featured Articles</h2>
+  <section className="mb-8">
+    <h2 id="featArticles" className="text-xl mb-4 semi-bold">Featured Articles</h2>
     <nav aria-labelledby="#featArticles">
       <ul>
         {featuredArticles.map(featuredArticle => (
