@@ -4,13 +4,32 @@ import Layout from '../components/layout'
 import TimeTag from '../components/timeTag'
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import RichTextRenderOptions from '../utils/rich-text-render-options'
+import SEO from 'react-seo-component'
+
 export default ({ data }) => {
   return (
     <Layout>
-      <h1 className="text-3xl semi-bold mb-4">{data.contentfulBlogPost.title}</h1>
+      <SEO
+        title={data.contentfulBlogPost.title}
+        titleTemplate={`Stop the covid-19 spread`}
+        description={data.contentfulBlogPost.teaser.teaser}
+        image={`https:${data.contentfulBlogPost.heroImage.file.url}`}
+        pathname={`https://stop-the-spread.dev/${data.contentfulBlogPost.slug}`}
+        siteLanguage={`english`}
+        siteLocale={`en-US`}
+        article={true}
+      />
+      <h1 className="text-3xl semi-bold mb-4">
+        {data.contentfulBlogPost.title}
+      </h1>
       <TimeTag time={data.contentfulBlogPost.updatedAt} />
       <figure className="mb-8">
-        <img src={data.contentfulBlogPost.heroImage && data.contentfulBlogPost.heroImage.file.url} />
+        <img
+          src={
+            data.contentfulBlogPost.heroImage &&
+            data.contentfulBlogPost.heroImage.file.url
+          }
+        />
       </figure>
       <div className="mt-8">
         {documentToReactComponents(
@@ -34,7 +53,11 @@ export const query = graphql`
           url
         }
       }
+      teaser {
+        teaser
+      }
       title
+      slug
       updatedAt(formatString: "DD MMM YYYY")
     }
   }
