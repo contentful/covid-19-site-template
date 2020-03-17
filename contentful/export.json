@@ -989,7 +989,7 @@
       },
       "fields": {
         "name": {
-          "en-US": "CoVid-19"
+          "en-US": "Covid-19"
         },
         "slug": {
           "en-US": "covid-19"
@@ -1573,7 +1573,7 @@
           }
         },
         "teaser": {
-          "en-US": "Here are a list of resources to stay updated on COVID-19. "
+          "en-US": "Here are a list of resources to stay updated on Covid-19. "
         },
         "body": {
           "en-US": {
@@ -1689,7 +1689,7 @@
                             },
                             "marks": [
                             ],
-                            "value": "COVID-19 Infographics: ",
+                            "value": "Covid-19 Infographics: ",
                             "nodeType": "text"
                           },
                           {
@@ -1823,7 +1823,7 @@
           "en-US": "latest-updates"
         },
         "value": {
-          "en-US": "Latest CoVid-19 Updates"
+          "en-US": "Latest Covid-19 Updates"
         }
       }
     },
