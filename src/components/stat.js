@@ -2,7 +2,7 @@ import React from 'react'
 import { FlagIcon } from 'react-flag-kit'
 export default ({ summary }) => {
   return (
-    <div className="max-w-lg bg-white rounded overflow-hidden shadow-lg p-8">
+    <div className="max-w-lg bg-white rounded overflow-hidden shadow-lg">
       <div className="flex items-center">
         <div className="mr-4">
           <FlagIcon code={summary.country} size={80} />
@@ -16,7 +16,7 @@ export default ({ summary }) => {
       <div className="flex justify-between">
         <div className="w-1/3 border border-gray-500 p-6 text-center">
           <h3 className="text-2xl bold"> {summary.confirmed}</h3>
-          <h4 className="text-lg">Confirmed</h4>
+          <h4 className="text-lg">Confirmed cases</h4>
         </div>
         <div className="w-1/3 border border-gray-500 p-6 text-center">
           <h3 className="text-2xl bold"> {summary.recovered}</h3>
