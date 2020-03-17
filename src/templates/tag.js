@@ -5,7 +5,6 @@ import ArticleTeaserList from '../components/articleTeaserList'
 
 export default ({ data }) => (
   <Layout>
-    <h2>Blog Post</h2>
     <ArticleTeaserList teasers={data.contentfulTag.blog_post || []} />
   </Layout>
 )
@@ -23,7 +22,13 @@ export const query = graphql`
           teaser
         }
         slug
-        createdAt
+        heroImage {
+          title
+          file {
+            url
+          }
+        }
+        createdAt(formatString: "DD MMM YYYY")
       }
     }
   }

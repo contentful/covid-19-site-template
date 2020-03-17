@@ -2,12 +2,14 @@ import React from 'react'
 import Tag from './tag'
 
 export default ({ tags }) => (
-  <section className="mt-8">
-    <h3 className="uppercase text-xl semi-bold"> Top Gategories </h3>
-    <div className="mt-6">
+  <section className="mb-8">
+    <h2 className="text-2xl mb-4 semi-bold">Top Categories</h2>
+    <ul>
       {tags.map(tag => (
-        <Tag tag={tag} key={tag.contentful_id} />
+        <li className="inline-block">
+          <Tag tag={tag} key={tag.contentful_id} />
+        </li>
       ))}
-    </div>
+    </ul>
   </section>
 )

@@ -21,8 +21,14 @@ export const query = graphql`
         teaser {
           teaser
         }
+        heroImage {
+          title
+          file {
+            url
+          }
+        }
         slug
-        createdAt
+        createdAt(formatString: "DD MMM YYYY")
       }
     }
   }
