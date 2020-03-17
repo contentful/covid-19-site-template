@@ -2,8 +2,7 @@ import React from 'react'
 import { Link } from 'gatsby'
 import TimeTag from './timeTag'
 
-export default ({ children, teaser }) => {
-  return (
+const ArticleTeaser = ({ teaser }) => (
   <article className="mb-6">
     <TimeTag time={teaser.createdAt} />
     <figure className="mb-4">
@@ -26,4 +25,5 @@ export default ({ children, teaser }) => {
     </div>
   </article>
 )
-  }
+
+export default ArticleTeaser

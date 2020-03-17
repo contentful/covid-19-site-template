@@ -1,8 +1,8 @@
 import React from 'react'
-import Layout from '../components/layout'
-import { graphql } from 'gatsby'
-import ArticleTeaserList from '../components/articleTeaserList'
 import SEO from 'react-seo-component'
+import { graphql } from 'gatsby'
+import Layout from '../components/layout'
+import ArticleTeaserList from '../components/articleTeaserList'
 
 export default ({ data }) => (
   <Layout>
@@ -16,7 +16,7 @@ export default ({ data }) => (
       twitterUsername={`contentful`}
     />
 
-    <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} microcopies={data.microcopies.nodes} />
+    <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} />
   </Layout>
 )
 
@@ -40,13 +40,6 @@ export const query = graphql`
         }
         slug
         createdAt(formatString: "DD MMM YYYY")
-      }
-    }
-
-    microcopies: allContentfulMicrocopy {
-      nodes {
-        key
-        value
       }
     }
   }
