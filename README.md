@@ -34,7 +34,21 @@ $ gatsby new covid-19-site-template https://github.com/contentful/covid-19-site-
 
 ### Set up of the needed content model and create a configuration file
 
-This project comes with a Contentful setup command `yarn setup`.
+```
+npm i -g contentful-cli
+```
+
+```
+contentful login
+```
+
+```sh
+contentful space import --space-id=<space-id> --content-file ./contentful/export.json
+```
+
+```
+yarn setup
+```
 
 ![Command line dialog of the yarn run setup command](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/setup.jpg "Command line dialog of the yarn run setup command")
 
