@@ -13,15 +13,11 @@ export default ({ data }) => {
         title={data.contentfulBlogPost.title}
         titleTemplate={`Stop the covid-19 spread`}
         description={data.contentfulBlogPost.teaser.teaser}
-        image={image}
-        pathname={siteUrlPlusSlug}
-        siteLanguage={siteLanguage}
-        siteLocale={siteLocale}
-        twitterUsername={twitterUsername}
-        author={authorName}
+        image={`https:${data.contentfulBlogPost.heroImage.file.url}`}
+        pathname={`https://stop-the-spread.dev/${data.contentfulBlogPost.slug}`}
+        siteLanguage={`english`}
+        siteLocale={`en-US`}
         article={true}
-        publishedDate={createdDate}
-        modifiedDate={updatedDate}
       />
       <h1 className="text-3xl semi-bold mb-4">
         {data.contentfulBlogPost.title}
@@ -51,18 +47,17 @@ export const query = graphql`
       body {
         json
       }
-<<<<<<< HEAD
       heroImage {
         title
         file {
           url
         }
-=======
+      }
       teaser {
         teaser
->>>>>>> feat: Add SEO component
       }
       title
+      slug
       updatedAt(formatString: "DD MMM YYYY")
     }
   }

@@ -10,7 +10,6 @@ export default ({ data }) => (
       title={`Stop the covid-19 spread`}
       titleTemplate={`stop-the-spread.dev`}
       description={`This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine.`}
-      image={image}
       pathname={`https://stop-the-spread.dev`}
       siteLanguage={`english`}
       siteLocale={`en-US`}
