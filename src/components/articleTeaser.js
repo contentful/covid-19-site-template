@@ -3,7 +3,6 @@ import { Link } from 'gatsby'
 import TimeTag from './timeTag'
 
 export default ({ children, teaser }) => {
-  console.log(teaser);
   return (
   <article className="mb-6">
     <TimeTag time={teaser.createdAt} />
