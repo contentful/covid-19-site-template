@@ -5,7 +5,7 @@ import ArticleTeaserList from '../components/articleTeaserList'
 
 export default ({ data }) => (
   <Layout>
-    <ArticleTeaserList teasers={data.contentfulTag.blog_post || []} />
+    <ArticleTeaserList teasers={data.contentfulTag.blog_post || []} microcopies={data.microcopies.nodes} />
   </Layout>
 )
 
@@ -29,6 +29,13 @@ export const query = graphql`
           }
         }
         createdAt(formatString: "DD MMM YYYY")
+      }
+    }
+
+    microcopies: allContentfulMicrocopy {
+      nodes {
+        key
+        value
       }
     }
   }
