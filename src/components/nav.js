@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { Link } from 'gatsby'
 
 const Nav = () => {
-  const [hidden, setHidden] = useState(false)
+  const [hidden, setHidden] = useState(true)
   return (
     <nav className="p-6 bg-white" aria-label="Main Navigation">
       <div className="container mx-auto flex flex-wrap items-center justify-between">
@@ -19,7 +19,7 @@ const Nav = () => {
               setHidden(!hidden)
             }}
             aria-expanded={!hidden}
-            className="flex items-center px-3 py-2 text-teal-200 border border-teal-400 rounded hover:text-white hover:border-white"
+            className="flex items-center px-3 py-2 text-grey-800 border border-gray-800 rounded hover:text-blue hover:border-blue"
           >
             <svg
               className="w-3 h-3 fill-current"
@@ -39,7 +39,7 @@ const Nav = () => {
           <li>
             <Link
               to="/contact"
-              className="inline-block text-sm px-4 py-2 leading-none border rounded border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 lg:mt-0"
+              className="inline-block text-sm px-4 py-2 leading-none border rounded border-white hover:border-transparent hover:text-blue-500 hover:bg-white mt-4 lg:mt-0"
             >
               Contact
             </Link>
