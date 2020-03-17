@@ -1,13 +1,12 @@
 import React from 'react'
 import { Link } from 'gatsby'
+import TimeTag from './timeTag'
 
 export default ({ children, teaser }) => {
   console.log(teaser);
   return (
   <article className="mb-6">
-    <time className="py-1 px-4 bg-blue-600 text-white mb-4 inline-block text-sm font-semibold" dateTime={teaser.createdAt}>
-      {teaser.createdAt}
-    </time>
+    <TimeTag time={teaser.createdAt} />
     <figure className="mb-4">
       <Link to={`/blog/${teaser.slug}`}>
         <img src={teaser.heroImage && teaser.heroImage.file.url} alt={teaser.heroImage && teaser.heroImage.title} />
