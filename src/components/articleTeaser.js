@@ -8,7 +8,7 @@ export default ({ children, teaser }) => {
     <TimeTag time={teaser.createdAt} />
     <figure className="mb-4">
       <Link to={`/blog/${teaser.slug}`}>
-        <img src={teaser.heroImage && teaser.heroImage.file.url} alt={teaser.heroImage && teaser.heroImage.title} />
+        <img src={teaser.heroImage && `https:${teaser.heroImage.file.url}?w=620`} alt={teaser.heroImage && teaser.heroImage.title} />
       </Link>
     </figure>
     <h2>
