@@ -1,13 +1,17 @@
 import React from 'react'
 import Layout from '../components/layout'
+import SiteMeta from '../components/siteMeta'
 import useI18n from '../hooks/use-i18n'
 
 const ContactPage = () => {
   const i18n = useI18n()
 
+  const pageTitle = i18n.get('contact-us', { default: 'Contact Us' })
+
   return (
     <Layout>
-      <h1 className="text-2xl font-semibold">{i18n.get('contact-us', { default: 'Contact Us' })}</h1>
+      <SiteMeta title={pageTitle} />
+      <h1 className="text-2xl font-semibold">{pageTitle}</h1>
       <form
         method="post"
         name="contact"
