@@ -28,8 +28,7 @@ $ yarn install
 Or use the [Gatsby CLI](https://www.npmjs.com/package/gatsby-cli).
 
 ```
-$ gatsby new covid-19-site-template
- https://github.com/contentful/covid-19-site-template
+$ gatsby new covid-19-site-template https://github.com/contentful/covid-19-site-template
 
 ```
 
