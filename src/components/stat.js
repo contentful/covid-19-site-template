@@ -5,7 +5,7 @@ import microcopy from '../utils/microcopy'
 export default ({ summary, microcopies }) => {
   return (
     <section className="mb-8">
-      <h2 className="text-2xl mb-4 semi-bold">{microcopy(microcopies, 'tracker')}</h2>
+      <h2 className="text-xl mb-4 font-semibold">{microcopy(microcopies, 'tracker')}</h2>
       <div className="max-w-lg p-3 bg-white flex items-center mb-4 overflow-hidden">
         <div className="mr-4">
           <FlagIcon code={summary.country} size={48} />

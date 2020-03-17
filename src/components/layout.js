@@ -47,7 +47,7 @@ export default ({ children }) => {
       </header>
       <div role="banner" className="h-banner bg-blue-500"></div>
       <main className="flex flex-wrap bg-white shadow-lg container max-w-screen-xl mx-auto mt-banner">
-        <section className="w-full pt-8 px-6 md:w-2/3">{children}</section>
+        <section className="w-full py-8 px-6 md:w-2/3">{children}</section>
         <aside className="w-full px-6 py-8 bg-gray-100 md:w-1/3">
           <FeaturedArticles
             featuredArticles={featuredArticles.nodes[0].blogPosts}
