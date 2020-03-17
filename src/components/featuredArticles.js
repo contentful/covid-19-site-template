@@ -1,21 +1,26 @@
 import React from 'react'
 import FeaturedArticleLink from './featuredArticleLink'
-import microcopy from '../utils/microcopy'
+import useI18n from '../hooks/use-i18n'
 
-export default ({ children, featuredArticles, microcopies }) => (
-  <section className="mb-8">
-    <h2 id="featArticles" className="text-xl mb-4 font-semibold">{microcopy(microcopies, 'featured-articles')}</h2>
-    <nav aria-labelledby="#featArticles">
-      <ul>
-        {featuredArticles.map(featuredArticle => (
-          <li key={featuredArticle.contentful_id}>
-            <FeaturedArticleLink
-              featuredArticle={featuredArticle}
-              key={featuredArticle.contentful_id}
-            />
-          </li>
-        ))}
-      </ul>
-    </nav>
-  </section>
-)
+const FeaturedArticles = ({ featuredArticles }) => {
+  const i18n = useI18n()
+
+  return (
+    <section className="mb-8">
+      <h2 id="featArticles" className="text-xl mb-4 font-semibold">
+        {i18n.get('featured-articles', { default: 'Featured Articles' })}
+      </h2>
+      <nav aria-labelledby="#featArticles">
+        <ul>
+          {featuredArticles.map(featuredArticle => (
+            <li key={featuredArticle.slug}>
+              <FeaturedArticleLink featuredArticle={featuredArticle} />
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </section>
+  )
+}
+
+export default FeaturedArticles

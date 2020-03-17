@@ -1,13 +1,13 @@
 import React from 'react'
 import Layout from '../components/layout'
-import microcopy from '../utils/microcopy'
+import useI18n from '../hooks/use-i18n'
 
-export default ({ data }) => {
-  const microcopies = data.microcopies.nodes
+const ContactPage = () => {
+  const i18n = useI18n()
 
   return (
     <Layout>
-      <h1 className="text-2xl font-semibold">{microcopy(microcopies, 'contact-us')}</h1>
+      <h1 className="text-2xl font-semibold">{i18n.get('contact-us', { default: 'Contact Us' })}</h1>
       <form
         method="post"
         name="contact"
@@ -24,7 +24,7 @@ export default ({ data }) => {
               className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               htmlFor="grid-first-name"
             >
-              {microcopy(microcopies, 'first-name')}
+              {i18n.get('first-name', 'First Name')}
             </label>
             <input
               className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border rounded appearance-none focus:outline-none focus:bg-white"
@@ -40,7 +40,7 @@ export default ({ data }) => {
               className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               htmlFor="grid-last-name"
             >
-              {microcopy(microcopies, 'last-name')}
+              {i18n.get('last-name', 'Last Name')}
             </label>
             <input
               className="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
@@ -57,7 +57,7 @@ export default ({ data }) => {
               className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               htmlFor="grid-password"
             >
-              {microcopy(microcopies, 'email')}
+              {i18n.get('email', 'Email')}
             </label>
             <input
               className="block w-full px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
@@ -65,7 +65,9 @@ export default ({ data }) => {
               type="email"
               type="name"
             />
-            <p className="text-xs italic text-gray-600">{microcopy(microcopies, 'email-example')}</p>
+            <p className="text-xs italic text-gray-600">
+              {i18n.get('email-example', { default: 'em@example.com' })}
+            </p>
           </div>
         </div>
         <div className="flex flex-wrap mb-6 -mx-3">
@@ -74,7 +76,7 @@ export default ({ data }) => {
               className="block mb-2 text-xs font-bold tracking-wide text-gray-700 uppercase"
               htmlFor="grid-password"
             >
-              {microcopy(microcopies, 'message')}
+              {i18n.get('message', { default: 'Message' })}
             </label>
             <textarea
               className="block w-full h-48 px-4 py-3 mb-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none resize-none no-resize focus:outline-none focus:bg-white focus:border-gray-500"
@@ -89,7 +91,7 @@ export default ({ data }) => {
               className="shadow bg-green-600 hover:bg-green-700 focus:shadow-outline focus:outline-none text-white font-bold py-2 px-4 rounded"
               type="submit"
             >
-              {microcopy(microcopies, 'send-button')}
+              {i18n.get('send-button', { default: 'Send' })}
             </button>
           </div>
           <div className="md:w-2/3"></div>
@@ -99,13 +101,4 @@ export default ({ data }) => {
   )
 }
 
-export const query = graphql`
-  {
-    microcopies: allContentfulMicrocopy {
-      nodes {
-        key
-        value
-      }
-    }
-  }
-`
+export default ContactPage

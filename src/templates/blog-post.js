@@ -6,7 +6,7 @@ import { documentToReactComponents } from '@contentful/rich-text-react-renderer'
 import RichTextRenderOptions from '../utils/rich-text-render-options'
 import SEO from 'react-seo-component'
 
-export default ({ data }) => {
+const BlogPost = ({ data }) => {
   return (
     <Layout>
       <SEO
@@ -40,6 +40,8 @@ export default ({ data }) => {
     </Layout>
   )
 }
+
+export default BlogPost
 
 export const query = graphql`
   query getBlogPost($slug: String!) {
