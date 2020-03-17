@@ -7,7 +7,7 @@ export default ({ data }) => {
 
   return (
     <Layout>
-      <h2 className="text-2xl font-semibold">{microcopy(microcopies, 'contact-us')}</h2>
+      <h1 className="text-2xl font-semibold">{microcopy(microcopies, 'contact-us')}</h1>
       <form
         method="post"
         name="contact"
