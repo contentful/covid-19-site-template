@@ -1,10 +1,19 @@
 import React, { useState } from 'react'
-import { Link } from 'gatsby'
+import { Link, useStaticQuery, graphql } from 'gatsby'
 import useI18n from '../hooks/use-i18n'
 
 const Nav = () => {
   const i18n = useI18n()
   const [hidden, setHidden] = useState(true)
+  const data = useStaticQuery(graphql`
+    query Nav {
+      site {
+        siteMetadata {
+          title
+        }
+      }
+    }
+  `)
 
   return (
     <nav className="p-6 bg-white" aria-label="Main Navigation">
@@ -12,7 +21,7 @@ const Nav = () => {
         <div className="flex items-center flex-shrink-0 mr-6">
           <Link to="/">
             <span className="text-xl font-semibold tracking-tight">
-              Project covid19
+              {data.site.siteMetadata.title}
             </span>
           </Link>
         </div>

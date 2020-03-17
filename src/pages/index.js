@@ -1,24 +1,18 @@
 import React from 'react'
-import SEO from 'react-seo-component'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import ArticleTeaserList from '../components/articleTeaserList'
+import SiteMeta from '../components/siteMeta'
 
-export default ({ data }) => (
-  <Layout>
-    <SEO
-      title={`Stop the covid-19 spread`}
-      titleTemplate={`stop-the-spread.dev`}
-      description={`This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine.`}
-      pathname={`https://stop-the-spread.dev`}
-      siteLanguage={`english`}
-      siteLocale={`en-US`}
-      twitterUsername={`contentful`}
-    />
+export default ({ data }) => {
+  return (
+    <Layout>
+      <SiteMeta />
 
-    <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} />
-  </Layout>
-)
+      <ArticleTeaserList teasers={data.allContentfulBlogPost.nodes} />
+    </Layout>
+  )
+}
 
 export const query = graphql`
   {
