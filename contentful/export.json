@@ -12,7 +12,7 @@
         "id": "blogPost",
         "type": "ContentType",
         "createdAt": "2020-03-15T12:01:45.993Z",
-        "updatedAt": "2020-03-15T12:20:17.192Z",
+        "updatedAt": "2020-03-18T18:36:11.388Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -20,8 +20,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 13,
-        "publishedAt": "2020-03-15T12:20:17.192Z",
+        "publishedVersion": 15,
+        "publishedAt": "2020-03-18T18:36:11.388Z",
         "firstPublishedAt": "2020-03-15T12:01:50.769Z",
         "createdBy": {
           "sys": {
@@ -37,8 +37,8 @@
             "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 7,
-        "version": 14,
+        "publishedCounter": 8,
+        "version": 16,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -138,7 +138,7 @@
           "name": "Author",
           "type": "Link",
           "localized": false,
-          "required": false,
+          "required": true,
           "validations": [
             {
               "linkContentType": [
@@ -603,7 +603,7 @@
         "id": "siteMetadata",
         "type": "ContentType",
         "createdAt": "2020-03-18T08:13:12.735Z",
-        "updatedAt": "2020-03-18T14:23:43.655Z",
+        "updatedAt": "2020-03-18T18:25:48.821Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -611,8 +611,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 11,
-        "publishedAt": "2020-03-18T14:23:43.655Z",
+        "publishedVersion": 13,
+        "publishedAt": "2020-03-18T18:25:48.821Z",
         "firstPublishedAt": "2020-03-18T08:13:13.290Z",
         "createdBy": {
           "sys": {
@@ -628,8 +628,8 @@
             "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 6,
-        "version": 12,
+        "publishedCounter": 7,
+        "version": 14,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -765,6 +765,23 @@
           "disabled": false,
           "omitted": false,
           "linkType": "Entry"
+        },
+        {
+          "id": "siteLogo",
+          "name": "Site Logo",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkMimetypeGroup": [
+                "image"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Asset"
         }
       ]
     },
@@ -878,7 +895,7 @@
             "linkType": "Space"
           }
         },
-        "version": 14,
+        "version": 16,
         "createdAt": "2020-03-15T12:01:50.835Z",
         "createdBy": {
           "sys": {
@@ -887,7 +904,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-15T12:20:18.055Z",
+        "updatedAt": "2020-03-18T18:36:12.180Z",
         "updatedBy": {
           "sys": {
             "id": "4SejVrWT96dvL9IV4Nb7sQ",
@@ -1216,7 +1233,7 @@
             "linkType": "Space"
           }
         },
-        "version": 12,
+        "version": 14,
         "createdAt": "2020-03-18T08:13:13.360Z",
         "createdBy": {
           "sys": {
@@ -1225,7 +1242,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-18T14:23:44.446Z",
+        "updatedAt": "2020-03-18T18:25:49.734Z",
         "updatedBy": {
           "sys": {
             "id": "4SejVrWT96dvL9IV4Nb7sQ",
@@ -1300,6 +1317,11 @@
         {
           "fieldId": "backgroundImage",
           "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "siteLogo",
+          "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         }
       ]
@@ -1510,7 +1532,7 @@
         "id": "6K3PGAPrHyqjWd2yyavA1P",
         "type": "Entry",
         "createdAt": "2020-03-15T12:30:33.137Z",
-        "updatedAt": "2020-03-16T15:12:19.170Z",
+        "updatedAt": "2020-03-18T18:33:31.853Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1518,8 +1540,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 57,
-        "publishedAt": "2020-03-15T12:32:35.067Z",
+        "publishedVersion": 74,
+        "publishedAt": "2020-03-18T18:33:31.853Z",
         "firstPublishedAt": "2020-03-15T12:32:35.067Z",
         "createdBy": {
           "sys": {
@@ -1532,11 +1554,11 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "7JwQsytwd8kvnc0VwIqBhq"
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 1,
-        "version": 74,
+        "publishedCounter": 2,
+        "version": 75,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1603,7 +1625,7 @@
         "id": "5fYDabHM0EsdFhVq2uSoSH",
         "type": "Entry",
         "createdAt": "2020-03-15T12:32:42.203Z",
-        "updatedAt": "2020-03-15T12:35:05.563Z",
+        "updatedAt": "2020-03-18T18:33:09.203Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1611,8 +1633,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 72,
-        "publishedAt": "2020-03-15T12:35:05.563Z",
+        "publishedVersion": 86,
+        "publishedAt": "2020-03-18T18:33:09.203Z",
         "firstPublishedAt": "2020-03-15T12:34:38.110Z",
         "createdBy": {
           "sys": {
@@ -1628,8 +1650,8 @@
             "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 2,
-        "version": 73,
+        "publishedCounter": 4,
+        "version": 87,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1647,10 +1669,10 @@
       },
       "fields": {
         "title": {
-          "en-US": "Hello World"
+          "en-US": "How we are protecting our employees and community against the spread of COVID-19"
         },
         "slug": {
-          "en-US": "hello-world"
+          "en-US": "How we are protecting our employees and community against the spread of COVID-19"
         },
         "heroImage": {
           "en-US": {
@@ -1662,7 +1684,7 @@
           }
         },
         "teaser": {
-          "en-US": "This text will appear as the short summary for the blog post."
+          "en-US": "The health and safety of our employees and our community is of upmost importance."
         },
         "body": {
           "en-US": {
@@ -1678,101 +1700,7 @@
                     },
                     "marks": [
                     ],
-                    "value": "This will be the long form text.",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "You can add formatting",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "heading-2"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "italic"
-                      }
-                    ],
-                    "value": "Any",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": " ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "underline"
-                      }
-                    ],
-                    "value": "kind",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": " of ",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                      {
-                        "type": "bold"
-                      }
-                    ],
-                    "value": "formatting",
-                    "nodeType": "text"
-                  },
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": ".",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "And include images:",
+                    "value": "The health and safety of our employees and our community is of upmost importance.  We all have a resposibility to contain the spread of COVID-19. We are sanitizing our community centers hourly, and for now they remain open. ",
                     "nodeType": "text"
                   }
                 ],
@@ -1802,21 +1730,6 @@
                     "marks": [
                     ],
                     "value": "",
-                    "nodeType": "text"
-                  }
-                ],
-                "nodeType": "paragraph"
-              },
-              {
-                "data": {
-                },
-                "content": [
-                  {
-                    "data": {
-                    },
-                    "marks": [
-                    ],
-                    "value": "Cheers",
                     "nodeType": "text"
                   }
                 ],
@@ -1953,7 +1866,7 @@
         "id": "1LJQrJYv5EPYNUMVIFMYwh",
         "type": "Entry",
         "createdAt": "2020-03-16T14:58:24.578Z",
-        "updatedAt": "2020-03-17T18:36:51.699Z",
+        "updatedAt": "2020-03-18T18:33:27.128Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1961,8 +1874,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 81,
-        "publishedAt": "2020-03-17T18:36:51.699Z",
+        "publishedVersion": 146,
+        "publishedAt": "2020-03-18T18:33:27.128Z",
         "firstPublishedAt": "2020-03-16T15:11:11.012Z",
         "createdBy": {
           "sys": {
@@ -1975,16 +1888,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "7LUXRXFv6ot4WNP5tdCVwZ"
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 3,
-        "version": 82,
+        "publishedCounter": 7,
+        "version": 147,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "7LUXRXFv6ot4WNP5tdCVwZ"
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
         "contentType": {
@@ -1997,22 +1910,22 @@
       },
       "fields": {
         "title": {
-          "en-US": "Important Resources"
+          "en-US": "All recreation centers in Berlin are closed until further notice"
         },
         "slug": {
-          "en-US": "important-resources"
+          "en-US": "All recreation centers in Berlin are closed until further notice"
         },
         "heroImage": {
           "en-US": {
             "sys": {
               "type": "Link",
               "linkType": "Asset",
-              "id": "5GkKXHpnHDGd8N0Jca9c4U"
+              "id": "icbbKMiSK13cRUAg6soqY"
             }
           }
         },
         "teaser": {
-          "en-US": "Here are a list of resources to stay updated on COVID-19. "
+          "en-US": "Effective on March 16, 2020 all Community Recreation Center locations will be closed. "
         },
         "body": {
           "en-US": {
@@ -2026,143 +1939,13 @@
                   {
                     "data": {
                     },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
-                            "value": "Updates from World Health Organization: ",
-                            "nodeType": "text"
-                          },
-                          {
-                            "data": {
-                              "uri": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen"
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "Novel coronavirus",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "hyperlink"
-                          },
-                          {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
-                            "value": "",
-                            "nodeType": "text"
-                          }
-                        ],
-                        "nodeType": "paragraph"
-                      }
+                    "marks": [
                     ],
-                    "nodeType": "list-item"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
-                            "value": "World Health Organization Dashboard: ",
-                            "nodeType": "text"
-                          },
-                          {
-                            "data": {
-                              "uri": "https://who.maps.arcgis.com/apps/opsdashboard/index.html#/ead3c6475654481ca51c248d52ab9c61"
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "https://who.maps.arcgis.com/apps/opsdashboard/index.html#/ead3c6475654481ca51c248d52ab9c61",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "hyperlink"
-                          },
-                          {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
-                            "value": "",
-                            "nodeType": "text"
-                          }
-                        ],
-                        "nodeType": "paragraph"
-                      }
-                    ],
-                    "nodeType": "list-item"
-                  },
-                  {
-                    "data": {
-                    },
-                    "content": [
-                      {
-                        "data": {
-                        },
-                        "content": [
-                          {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
-                            "value": "COVID-19 Infographics: ",
-                            "nodeType": "text"
-                          },
-                          {
-                            "data": {
-                              "uri": "https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/"
-                            },
-                            "content": [
-                              {
-                                "data": {
-                                },
-                                "marks": [
-                                ],
-                                "value": "https://informationisbeautiful.net/visualizations/covid-19-coronavirus-infographic-datapack/",
-                                "nodeType": "text"
-                              }
-                            ],
-                            "nodeType": "hyperlink"
-                          },
-                          {
-                            "data": {
-                            },
-                            "marks": [
-                            ],
-                            "value": "",
-                            "nodeType": "text"
-                          }
-                        ],
-                        "nodeType": "paragraph"
-                      }
-                    ],
-                    "nodeType": "list-item"
+                    "value": "Effective on March 16, 2020 all Community Recreation Center locations will be closed. This is part of a city-wide decision to close fitness centers to curb the spread of Covid-19 by limiting social contact. \n\nThe health and safety of our employees and our community is of upmost importance. \n\nWe all have a responsibility to contain the spread of COVID-19. We will regularly update this page as the situation unfolds. Please check back for updates. ",
+                    "nodeType": "text"
                   }
                 ],
-                "nodeType": "ordered-list"
+                "nodeType": "paragraph"
               },
               {
                 "data": {
@@ -2181,6 +1964,15 @@
               }
             ],
             "nodeType": "document"
+          }
+        },
+        "author": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "6K3PGAPrHyqjWd2yyavA1P"
+            }
           }
         },
         "tags": {
@@ -3349,7 +3141,7 @@
         "id": "6mJSzQZZoQLlTr9wn2fYGl",
         "type": "Entry",
         "createdAt": "2020-03-18T08:13:21.387Z",
-        "updatedAt": "2020-03-18T15:17:23.373Z",
+        "updatedAt": "2020-03-18T18:36:27.052Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3357,8 +3149,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 26,
-        "publishedAt": "2020-03-18T15:17:23.373Z",
+        "publishedVersion": 56,
+        "publishedAt": "2020-03-18T18:36:27.052Z",
         "firstPublishedAt": "2020-03-18T08:20:36.683Z",
         "createdBy": {
           "sys": {
@@ -3374,8 +3166,8 @@
             "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 3,
-        "version": 27,
+        "publishedCounter": 5,
+        "version": 57,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3396,13 +3188,13 @@
           "en-US": "SEO Metadata"
         },
         "siteTitle": {
-          "en-US": "Stop the Covid-19 Spread"
+          "en-US": "Community Recreation Center"
         },
         "titleTemplate": {
           "en-US": "stop-the-spread.dev"
         },
         "description": {
-          "en-US": "This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine."
+          "en-US": "This is a demo example. This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine."
         },
         "pathname": {
           "en-US": "https://stop-the-spread.dev"
@@ -3427,6 +3219,15 @@
               "id": "7serJssd0cbgbkBcLT3gO8"
             }
           }
+        },
+        "siteLogo": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Asset",
+              "id": "2I707oax7wcJVX8dk3hcJF"
+            }
+          }
         }
       }
     },
@@ -3442,7 +3243,7 @@
         "id": "7serJssd0cbgbkBcLT3gO8",
         "type": "Entry",
         "createdAt": "2020-03-18T14:24:17.803Z",
-        "updatedAt": "2020-03-18T15:03:20.385Z",
+        "updatedAt": "2020-03-18T18:31:00.669Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3450,8 +3251,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 24,
-        "publishedAt": "2020-03-18T15:03:20.385Z",
+        "publishedVersion": 54,
+        "publishedAt": "2020-03-18T18:31:00.669Z",
         "firstPublishedAt": "2020-03-18T15:03:06.898Z",
         "createdBy": {
           "sys": {
@@ -3464,16 +3265,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
           }
         },
-        "publishedCounter": 2,
-        "version": 25,
+        "publishedCounter": 6,
+        "version": 55,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
           }
         },
         "contentType": {
@@ -3486,16 +3287,16 @@
       },
       "fields": {
         "title": {
-          "en-US": "Backdrop"
+          "en-US": "Recreation center"
         },
         "altText": {
-          "en-US": "Wash your hands"
+          "en-US": "Recreation center"
         },
         "description": {
-          "en-US": "Child washing hands"
+          "en-US": "Recreation center"
         },
         "unsplashUrl": {
-          "en-US": "https://images.unsplash.com/photo-1565100504540-90c8e1b13704?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
+          "en-US": "https://images.unsplash.com/photo-1558611848-73f7eb4001a1?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
         }
       }
     }
@@ -3583,7 +3384,7 @@
         "id": "6Od9v3wzLOysiMum0Wkmme",
         "type": "Asset",
         "createdAt": "2020-03-15T12:01:52.466Z",
-        "updatedAt": "2020-03-15T12:02:01.651Z",
+        "updatedAt": "2020-03-18T17:55:14.680Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3591,8 +3392,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2020-03-15T12:02:01.651Z",
+        "publishedVersion": 16,
+        "publishedAt": "2020-03-18T17:55:14.680Z",
         "firstPublishedAt": "2020-03-15T12:02:01.651Z",
         "createdBy": {
           "sys": {
@@ -3605,38 +3406,38 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 17,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
           }
         }
       },
       "fields": {
         "title": {
-          "en-US": "Woman with black hat"
+          "en-US": "Washing hands"
         },
         "description": {
-          "en-US": "Woman wearing a black hat"
+          "en-US": "washing hands"
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/yg3gz5m6hgo7/6Od9v3wzLOysiMum0Wkmme/114f1babe5adeb2cb10d1a7e638bbf83/cameron-kirby-88711.jpg",
+            "url": "//images.ctfassets.net/yg3gz5m6hgo7/6Od9v3wzLOysiMum0Wkmme/5a26002f3e1c3739cb42bd11ff712805/hand_washing.png",
             "details": {
-              "size": 7316629,
+              "size": 1218042,
               "image": {
-                "width": 3000,
-                "height": 2000
+                "width": 1240,
+                "height": 624
               }
             },
-            "fileName": "cameron-kirby-88711.jpg",
-            "contentType": "image/jpeg"
+            "fileName": "hand washing.png",
+            "contentType": "image/png"
           }
         }
       }
@@ -3653,7 +3454,7 @@
         "id": "4NzwDSDlGECGIiokKomsyI",
         "type": "Asset",
         "createdAt": "2020-03-15T12:01:52.472Z",
-        "updatedAt": "2020-03-15T12:02:01.022Z",
+        "updatedAt": "2020-03-18T17:54:31.412Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3661,8 +3462,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 2,
-        "publishedAt": "2020-03-15T12:02:01.022Z",
+        "publishedVersion": 6,
+        "publishedAt": "2020-03-18T17:54:31.412Z",
         "firstPublishedAt": "2020-03-15T12:02:01.022Z",
         "createdBy": {
           "sys": {
@@ -3675,16 +3476,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
           }
         },
-        "publishedCounter": 1,
-        "version": 3,
+        "publishedCounter": 2,
+        "version": 7,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
           }
         }
       },
@@ -3697,16 +3498,16 @@
         },
         "file": {
           "en-US": {
-            "url": "//images.ctfassets.net/yg3gz5m6hgo7/4NzwDSDlGECGIiokKomsyI/ff799d0d5f114dfa60e1d657def67528/denys-nevozhai-100695.jpg",
+            "url": "//images.ctfassets.net/yg3gz5m6hgo7/4NzwDSDlGECGIiokKomsyI/3761bb034513837be9a1cfce2ca0082b/sanitizer.png",
             "details": {
-              "size": 15736986,
+              "size": 1013705,
               "image": {
-                "width": 3992,
-                "height": 2992
+                "width": 1240,
+                "height": 624
               }
             },
-            "fileName": "denys-nevozhai-100695.jpg",
-            "contentType": "image/jpeg"
+            "fileName": "sanitizer.png",
+            "contentType": "image/png"
           }
         }
       }
@@ -3844,6 +3645,140 @@
             },
             "fileName": "earth.jpg",
             "contentType": "image/jpeg"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "icbbKMiSK13cRUAg6soqY",
+        "type": "Asset",
+        "createdAt": "2020-03-18T17:35:45.418Z",
+        "updatedAt": "2020-03-18T17:45:40.088Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 6,
+        "publishedAt": "2020-03-18T17:45:40.088Z",
+        "firstPublishedAt": "2020-03-18T17:45:40.088Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 7,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "5XfUR2HRAvR4qWUjQxA3kF"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "tim-mossholder-C8jNJslQM3A-unsplash"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/yg3gz5m6hgo7/icbbKMiSK13cRUAg6soqY/0110f282446b054928a35c72fc58ff6b/closed.png",
+            "details": {
+              "size": 952447,
+              "image": {
+                "width": 1240,
+                "height": 624
+              }
+            },
+            "fileName": "closed.png",
+            "contentType": "image/png"
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "2I707oax7wcJVX8dk3hcJF",
+        "type": "Asset",
+        "createdAt": "2020-03-18T18:26:01.107Z",
+        "updatedAt": "2020-03-18T18:28:22.855Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-18T18:28:22.855Z",
+        "firstPublishedAt": "2020-03-18T18:26:37.232Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Logo"
+        },
+        "file": {
+          "en-US": {
+            "url": "//images.ctfassets.net/yg3gz5m6hgo7/2I707oax7wcJVX8dk3hcJF/9eea5f5a144c950d7b364d75d1904506/vector.png",
+            "details": {
+              "size": 1372,
+              "image": {
+                "width": 41,
+                "height": 41
+              }
+            },
+            "fileName": "vector.png",
+            "contentType": "image/png"
           }
         }
       }
