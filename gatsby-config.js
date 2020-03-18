@@ -1,16 +1,6 @@
 require('dotenv').config()
 
 module.exports = {
-  siteMetadata: {
-    title: 'Stop the Covid-19 Spread',
-    titleTemplate: 'stop-the-spread.dev',
-    description: 'This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine.',
-    pathname: 'https://stop-the-spread.dev',
-    siteLanguage: 'english',
-    siteLocale: 'en-US',
-    twitterUsername: 'contentful'
-
-  },
   plugins: [
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',

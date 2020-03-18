@@ -590,6 +590,280 @@
           "omitted": false
         }
       ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "siteMetadata",
+        "type": "ContentType",
+        "createdAt": "2020-03-18T08:13:12.735Z",
+        "updatedAt": "2020-03-18T14:23:43.655Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 11,
+        "publishedAt": "2020-03-18T14:23:43.655Z",
+        "firstPublishedAt": "2020-03-18T08:13:13.290Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 6,
+        "version": 12,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        }
+      },
+      "displayField": "internalName",
+      "name": "Site Metadata",
+      "description": "",
+      "fields": [
+        {
+          "id": "internalName",
+          "name": "Internal Name",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+            {
+              "unique": true
+            },
+            {
+              "in": [
+                "SEO Metadata"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "siteTitle",
+          "name": "Site Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "titleTemplate",
+          "name": "Title Template",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "pathname",
+          "name": "Pathname",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "siteLanguage",
+          "name": "Site Language",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "siteLocale",
+          "name": "Site Locale",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "twitterUsername",
+          "name": "Twitter Username",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundColor",
+          "name": "Background Color",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundImage",
+          "name": "Background Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "unsplashImage"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "unsplashImage",
+        "type": "ContentType",
+        "createdAt": "2020-03-18T08:57:51.148Z",
+        "updatedAt": "2020-03-18T10:09:24.540Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-18T10:09:24.540Z",
+        "firstPublishedAt": "2020-03-18T08:57:51.623Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Unsplash Image",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "altText",
+          "name": "Alt Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "unsplashUrl",
+          "name": "Unsplash URL",
+          "type": "Text",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        }
+      ]
     }
   ],
   "editorInterfaces": [
@@ -930,6 +1204,171 @@
           "widgetNamespace": "builtin"
         }
       ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "yg3gz5m6hgo7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 12,
+        "createdAt": "2020-03-18T08:13:13.360Z",
+        "createdBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-18T14:23:44.446Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "siteMetadata",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "internalName",
+          "widgetId": "dropdown",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "siteTitle",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "titleTemplate",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "pathname",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "siteLanguage",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "siteLocale",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "twitterUsername",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundColor",
+          "settings": {
+            "helpText": "Banner will backdrop to this colour if no background image is specified. If not set, will default to a Light Blue"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "yg3gz5m6hgo7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2020-03-18T08:57:51.685Z",
+        "createdBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-18T10:09:25.307Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "unsplashImage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "altText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "unsplashUrl",
+          "widgetId": "unsplash-search",
+          "widgetNamespace": "extension"
+        }
+      ]
     }
   ],
   "entries": [
@@ -989,7 +1428,7 @@
       },
       "fields": {
         "name": {
-          "en-US": "Covid-19"
+          "en-US": "CoVid-19"
         },
         "slug": {
           "en-US": "covid-19"
@@ -1514,7 +1953,7 @@
         "id": "1LJQrJYv5EPYNUMVIFMYwh",
         "type": "Entry",
         "createdAt": "2020-03-16T14:58:24.578Z",
-        "updatedAt": "2020-03-16T15:18:54.244Z",
+        "updatedAt": "2020-03-17T18:36:51.699Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1522,8 +1961,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 78,
-        "publishedAt": "2020-03-16T15:18:54.244Z",
+        "publishedVersion": 81,
+        "publishedAt": "2020-03-17T18:36:51.699Z",
         "firstPublishedAt": "2020-03-16T15:11:11.012Z",
         "createdBy": {
           "sys": {
@@ -1536,16 +1975,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "7JwQsytwd8kvnc0VwIqBhq"
+            "id": "7LUXRXFv6ot4WNP5tdCVwZ"
           }
         },
-        "publishedCounter": 2,
-        "version": 79,
+        "publishedCounter": 3,
+        "version": 82,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "7JwQsytwd8kvnc0VwIqBhq"
+            "id": "7LUXRXFv6ot4WNP5tdCVwZ"
           }
         },
         "contentType": {
@@ -1573,7 +2012,7 @@
           }
         },
         "teaser": {
-          "en-US": "Here are a list of resources to stay updated on Covid-19. "
+          "en-US": "Here are a list of resources to stay updated on COVID-19. "
         },
         "body": {
           "en-US": {
@@ -1610,7 +2049,7 @@
                                 },
                                 "marks": [
                                 ],
-                                "value": "https://www.who.int/emergencies/diseases/novel-coronavirus-2019/events-as-they-happen",
+                                "value": "Novel coronavirus",
                                 "nodeType": "text"
                               }
                             ],
@@ -1689,7 +2128,7 @@
                             },
                             "marks": [
                             ],
-                            "value": "Covid-19 Infographics: ",
+                            "value": "COVID-19 Infographics: ",
                             "nodeType": "text"
                           },
                           {
@@ -1776,7 +2215,7 @@
         "id": "3SkU3AyZcX4buH2jbDOimr",
         "type": "Entry",
         "createdAt": "2020-03-17T13:30:26.994Z",
-        "updatedAt": "2020-03-17T13:30:49.225Z",
+        "updatedAt": "2020-03-17T17:31:11.416Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1784,8 +2223,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 29,
-        "publishedAt": "2020-03-17T13:30:49.225Z",
+        "publishedVersion": 31,
+        "publishedAt": "2020-03-17T17:31:11.416Z",
         "firstPublishedAt": "2020-03-17T13:30:49.225Z",
         "createdBy": {
           "sys": {
@@ -1798,16 +2237,16 @@
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "7LUXRXFv6ot4WNP5tdCVwZ"
           }
         },
-        "publishedCounter": 1,
-        "version": 30,
+        "publishedCounter": 2,
+        "version": 32,
         "publishedBy": {
           "sys": {
             "type": "Link",
             "linkType": "User",
-            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+            "id": "7LUXRXFv6ot4WNP5tdCVwZ"
           }
         },
         "contentType": {
@@ -2832,6 +3271,231 @@
         },
         "value": {
           "en-US": "Send"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "4Ryg5ZNQlDTKLD8FIL78kU",
+        "type": "Entry",
+        "createdAt": "2020-03-18T08:05:51.423Z",
+        "updatedAt": "2020-03-18T08:06:05.126Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 13,
+        "publishedAt": "2020-03-18T08:06:05.126Z",
+        "firstPublishedAt": "2020-03-18T08:06:05.126Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 1,
+        "version": 14,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "microcopy"
+          }
+        }
+      },
+      "fields": {
+        "key": {
+          "en-US": "read-article"
+        },
+        "value": {
+          "en-US": "Read this article"
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "6mJSzQZZoQLlTr9wn2fYGl",
+        "type": "Entry",
+        "createdAt": "2020-03-18T08:13:21.387Z",
+        "updatedAt": "2020-03-18T15:17:23.373Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 26,
+        "publishedAt": "2020-03-18T15:17:23.373Z",
+        "firstPublishedAt": "2020-03-18T08:20:36.683Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 3,
+        "version": 27,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "siteMetadata"
+          }
+        }
+      },
+      "fields": {
+        "internalName": {
+          "en-US": "SEO Metadata"
+        },
+        "siteTitle": {
+          "en-US": "Stop the Covid-19 Spread"
+        },
+        "titleTemplate": {
+          "en-US": "stop-the-spread.dev"
+        },
+        "description": {
+          "en-US": "This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine."
+        },
+        "pathname": {
+          "en-US": "https://stop-the-spread.dev"
+        },
+        "siteLanguage": {
+          "en-US": "english"
+        },
+        "siteLocale": {
+          "en-US": "en-US"
+        },
+        "twitterUsername": {
+          "en-US": "contentful"
+        },
+        "backgroundColor": {
+          "en-US": "bg-blue-500"
+        },
+        "backgroundImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7serJssd0cbgbkBcLT3gO8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "7serJssd0cbgbkBcLT3gO8",
+        "type": "Entry",
+        "createdAt": "2020-03-18T14:24:17.803Z",
+        "updatedAt": "2020-03-18T15:03:20.385Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 24,
+        "publishedAt": "2020-03-18T15:03:20.385Z",
+        "firstPublishedAt": "2020-03-18T15:03:06.898Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 25,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "unsplashImage"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Backdrop"
+        },
+        "altText": {
+          "en-US": "Wash your hands"
+        },
+        "description": {
+          "en-US": "Child washing hands"
+        },
+        "unsplashUrl": {
+          "en-US": "https://images.unsplash.com/photo-1565100504540-90c8e1b13704?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
         }
       }
     }
