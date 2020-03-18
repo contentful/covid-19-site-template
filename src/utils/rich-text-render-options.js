@@ -24,6 +24,7 @@ const HYPERLINK = ({ children, dataUri }) => (
     {children}
   </a>
 )
+
 const Img = ({ node }) => (
   <img
     src={`https:${node.data.target.fields.file['en-US'].url}?w=630&h=310&fit=thumb`}
