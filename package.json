@@ -45,7 +45,7 @@
     "gatsby",
     "contentful"
   ],
-  "license": "unlicensed",
+  "license": "MIT",
   "main": "n/a",
   "repository": {
     "type": "git",
