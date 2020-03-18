@@ -3,13 +3,13 @@ import SEO from 'react-seo-component'
 import { graphql, useStaticQuery } from 'gatsby'
 
 const query = graphql`
-  query siteMeta {
-    site {
-      siteMetadata {
-        title
-        titleTemplate
+  {
+    siteMetadata: allContentfulSiteMetadata {
+      nodes {
+        siteTitle
         description
         pathname
+        titleTemplate
         siteLanguage
         siteLocale
         twitterUsername
@@ -20,15 +20,15 @@ const query = graphql`
 
 const SiteMeta = (props) => {
   const data = useStaticQuery(query)
-  const { site: { siteMetadata } } = data
+  const siteMetadata = data.siteMetadata.nodes[0]
 
   return (
     <SEO
-      title={siteMetadata.title}
+      title={siteMetadata.siteTitle}
       description={siteMetadata.description}
       pathname={props.pathname || siteMetadata.pathname}
       titleTemplate={siteMetadata.titleTemplate}
-      siteLanguage={siteMetadata.language}
+      siteLanguage={siteMetadata.siteLanguage}
       siteLocale={siteMetadata.siteLocale}
       twitterUsername={siteMetadata.twitterUsername}
       {...props}
