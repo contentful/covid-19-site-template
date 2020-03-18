@@ -603,7 +603,7 @@
         "id": "siteMetadata",
         "type": "ContentType",
         "createdAt": "2020-03-18T08:13:12.735Z",
-        "updatedAt": "2020-03-18T08:19:40.303Z",
+        "updatedAt": "2020-03-18T14:23:43.655Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -611,8 +611,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 5,
-        "publishedAt": "2020-03-18T08:19:40.303Z",
+        "publishedVersion": 11,
+        "publishedAt": "2020-03-18T14:23:43.655Z",
         "firstPublishedAt": "2020-03-18T08:13:13.290Z",
         "createdBy": {
           "sys": {
@@ -628,8 +628,8 @@
             "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 3,
-        "version": 6,
+        "publishedCounter": 6,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -733,6 +733,131 @@
           "type": "Symbol",
           "localized": false,
           "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundColor",
+          "name": "Background Color",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "backgroundImage",
+          "name": "Background Image",
+          "type": "Link",
+          "localized": false,
+          "required": false,
+          "validations": [
+            {
+              "linkContentType": [
+                "unsplashImage"
+              ]
+            }
+          ],
+          "disabled": false,
+          "omitted": false,
+          "linkType": "Entry"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "unsplashImage",
+        "type": "ContentType",
+        "createdAt": "2020-03-18T08:57:51.148Z",
+        "updatedAt": "2020-03-18T10:09:24.540Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 9,
+        "publishedAt": "2020-03-18T10:09:24.540Z",
+        "firstPublishedAt": "2020-03-18T08:57:51.623Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 5,
+        "version": 10,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        }
+      },
+      "displayField": "title",
+      "name": "Unsplash Image",
+      "description": "",
+      "fields": [
+        {
+          "id": "title",
+          "name": "Title",
+          "type": "Symbol",
+          "localized": false,
+          "required": true,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "altText",
+          "name": "Alt Text",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "description",
+          "name": "Description",
+          "type": "Symbol",
+          "localized": false,
+          "required": false,
+          "validations": [
+          ],
+          "disabled": false,
+          "omitted": false
+        },
+        {
+          "id": "unsplashUrl",
+          "name": "Unsplash URL",
+          "type": "Text",
+          "localized": false,
+          "required": true,
           "validations": [
           ],
           "disabled": false,
@@ -1091,7 +1216,7 @@
             "linkType": "Space"
           }
         },
-        "version": 6,
+        "version": 12,
         "createdAt": "2020-03-18T08:13:13.360Z",
         "createdBy": {
           "sys": {
@@ -1100,7 +1225,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2020-03-18T08:19:41.205Z",
+        "updatedAt": "2020-03-18T14:23:44.446Z",
         "updatedBy": {
           "sys": {
             "id": "4SejVrWT96dvL9IV4Nb7sQ",
@@ -1163,6 +1288,85 @@
           "fieldId": "twitterUsername",
           "widgetId": "singleLine",
           "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundColor",
+          "settings": {
+            "helpText": "Banner will backdrop to this colour if no background image is specified. If not set, will default to a Light Blue"
+          },
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "backgroundImage",
+          "widgetId": "entryLinkEditor",
+          "widgetNamespace": "builtin"
+        }
+      ]
+    },
+    {
+      "sys": {
+        "id": "default",
+        "type": "EditorInterface",
+        "space": {
+          "sys": {
+            "id": "yg3gz5m6hgo7",
+            "type": "Link",
+            "linkType": "Space"
+          }
+        },
+        "version": 10,
+        "createdAt": "2020-03-18T08:57:51.685Z",
+        "createdBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "updatedAt": "2020-03-18T10:09:25.307Z",
+        "updatedBy": {
+          "sys": {
+            "id": "4SejVrWT96dvL9IV4Nb7sQ",
+            "type": "Link",
+            "linkType": "User"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "id": "unsplashImage",
+            "type": "Link",
+            "linkType": "ContentType"
+          }
+        },
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        }
+      },
+      "controls": [
+        {
+          "fieldId": "title",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "altText",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "description",
+          "widgetId": "singleLine",
+          "widgetNamespace": "builtin"
+        },
+        {
+          "fieldId": "unsplashUrl",
+          "widgetId": "unsplash-search",
+          "widgetNamespace": "extension"
         }
       ]
     }
@@ -3145,7 +3349,7 @@
         "id": "6mJSzQZZoQLlTr9wn2fYGl",
         "type": "Entry",
         "createdAt": "2020-03-18T08:13:21.387Z",
-        "updatedAt": "2020-03-18T08:20:36.683Z",
+        "updatedAt": "2020-03-18T15:17:23.373Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -3153,8 +3357,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 16,
-        "publishedAt": "2020-03-18T08:20:36.683Z",
+        "publishedVersion": 26,
+        "publishedAt": "2020-03-18T15:17:23.373Z",
         "firstPublishedAt": "2020-03-18T08:20:36.683Z",
         "createdBy": {
           "sys": {
@@ -3170,8 +3374,8 @@
             "id": "4SejVrWT96dvL9IV4Nb7sQ"
           }
         },
-        "publishedCounter": 1,
-        "version": 17,
+        "publishedCounter": 3,
+        "version": 27,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -3211,6 +3415,87 @@
         },
         "twitterUsername": {
           "en-US": "contentful"
+        },
+        "backgroundColor": {
+          "en-US": "bg-blue-500"
+        },
+        "backgroundImage": {
+          "en-US": {
+            "sys": {
+              "type": "Link",
+              "linkType": "Entry",
+              "id": "7serJssd0cbgbkBcLT3gO8"
+            }
+          }
+        }
+      }
+    },
+    {
+      "sys": {
+        "space": {
+          "sys": {
+            "type": "Link",
+            "linkType": "Space",
+            "id": "yg3gz5m6hgo7"
+          }
+        },
+        "id": "7serJssd0cbgbkBcLT3gO8",
+        "type": "Entry",
+        "createdAt": "2020-03-18T14:24:17.803Z",
+        "updatedAt": "2020-03-18T15:03:20.385Z",
+        "environment": {
+          "sys": {
+            "id": "master",
+            "type": "Link",
+            "linkType": "Environment"
+          }
+        },
+        "publishedVersion": 24,
+        "publishedAt": "2020-03-18T15:03:20.385Z",
+        "firstPublishedAt": "2020-03-18T15:03:06.898Z",
+        "createdBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "updatedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "publishedCounter": 2,
+        "version": 25,
+        "publishedBy": {
+          "sys": {
+            "type": "Link",
+            "linkType": "User",
+            "id": "4SejVrWT96dvL9IV4Nb7sQ"
+          }
+        },
+        "contentType": {
+          "sys": {
+            "type": "Link",
+            "linkType": "ContentType",
+            "id": "unsplashImage"
+          }
+        }
+      },
+      "fields": {
+        "title": {
+          "en-US": "Backdrop"
+        },
+        "altText": {
+          "en-US": "Wash your hands"
+        },
+        "description": {
+          "en-US": "Child washing hands"
+        },
+        "unsplashUrl": {
+          "en-US": "https://images.unsplash.com/photo-1565100504540-90c8e1b13704?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=900&ixid=eyJhcHBfaWQiOjF9&ixlib=rb-1.2.1&q=80&w=1600"
         }
       }
     }
