@@ -7,7 +7,7 @@ import FeaturedArticles from './featuredArticles'
 import Nav from './nav'
 
 const Layout = ({ children }) => {
-  const { stats, tags, featuredArticles } = useStaticQuery(graphql`
+  const { stats, tags, featuredArticles, meta} = useStaticQuery(graphql`
     {
       stats: allCovid19CountrySummary {
         nodes {
@@ -33,18 +33,32 @@ const Layout = ({ children }) => {
           }
         }
       }
+      meta: allContentfulSiteMetadata {
+        nodes {
+          backgroundColor
+          backgroundImage {
+            unsplashUrl {
+             unsplashUrl
+            }
+          }
+        }
+      }
     }
   `)
+
+  const backgroundColor = meta.nodes[0].backgroundColor || 'bg-blue-500'
+  const unsplashUrl = meta.nodes[0].backgroundImage && meta.nodes[0].backgroundImage.unsplashUrl.unsplashUrl
+
   return (
     <>
       <header className="relative">
         <Nav />
       </header>
-      <div role="banner" className="bg-blue-500 h-banner"></div>
+      <div role="banner" className={`h-banner ${backgroundColor}`} style={unsplashUrl && {'background-image': `url(${unsplashUrl})`, 'background-size': 'cover'}}></div>
       <main className="container flex flex-wrap mx-auto bg-white shadow-lg max-w-screen-xl mt-banner">
         <section className="w-full px-6 py-8 md:w-2/3">{children}</section>
         <aside className="w-full px-6 py-8 bg-gray-100 md:w-1/3">
-          <FeaturedArticles
+           <FeaturedArticles
             featuredArticles={featuredArticles.nodes[0].blogPosts}
           />
           <TagList tags={tags.nodes} />

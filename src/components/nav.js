@@ -6,10 +6,10 @@ const Nav = () => {
   const i18n = useI18n()
   const [hidden, setHidden] = useState(true)
   const data = useStaticQuery(graphql`
-    query Nav {
-      site {
-        siteMetadata {
-          title
+    {
+      siteMetadata: allContentfulSiteMetadata {
+        nodes {
+          siteTitle
         }
       }
     }
@@ -21,7 +21,7 @@ const Nav = () => {
         <div className="flex items-center flex-shrink-0 mr-6">
           <Link to="/">
             <span className="text-xl font-semibold tracking-tight">
-              {data.site.siteMetadata.title}
+              {data.siteMetadata.nodes[0].siteTitle}
             </span>
           </Link>
         </div>

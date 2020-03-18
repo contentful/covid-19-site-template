@@ -24,7 +24,7 @@ const BlogPost = ({ data }) => {
         <img
           src={
             data.contentfulBlogPost.heroImage &&
-            data.contentfulBlogPost.heroImage.file.url
+            `${data.contentfulBlogPost.heroImage.file.url}?w=630&h=310&fit=thumb`
           }
         />
       </figure>
