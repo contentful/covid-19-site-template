@@ -5,7 +5,6 @@ module.exports = {
     'gatsby-transformer-remark',
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
-    'gatsby-plugin-netlify',
     `gatsby-plugin-postcss`,
     {
       resolve: `gatsby-plugin-purgecss`,
