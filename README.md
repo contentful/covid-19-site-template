@@ -21,7 +21,7 @@ Install [Yarn](https://yarnpkg.com/en/docs/install).
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:contentful/covid-19-site-template.git
+$ git clone https://github.com/contentful/covid-19-site-template.git
 $ yarn install
 ```
 
