@@ -43,10 +43,6 @@ contentful login
 ```
 
 ```sh
-contentful space import --space-id=<space-id> --content-file ./contentful/export.json
-```
-
-```sh
 rm static/_redirects
 ```
 
