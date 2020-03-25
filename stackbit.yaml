@@ -1,0 +1,8 @@
+ssgName: gatsby
+buildCommand: rm -f static/_redirects ; npm run build
+publishDir: public
+import:
+  type: contentful
+  spaceIdEnvVar: CF_COVID_SPACE_ID
+  accessTokenEnvVar: CF_COVID_ACCESS_TOKEN
+  contentFile: ./contentful/export.json
