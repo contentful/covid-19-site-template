@@ -14,14 +14,12 @@ This project is part of [contentful-userland](https://github.com/contentful-user
 
 You must have a Contentful account to use this project. If you don’t have an account yet, you can register for one at [www.contentful.com/sign-up](https://www.contentful.com/sign-up/).
 
-## Getting started
-
-Install [Yarn](https://yarnpkg.com/en/docs/install).
+The following instructions are helpful is you have Yarn installed. If not, please install [Yarn](https://yarnpkg.com/en/docs/install).
 
 ### Get the source code and install dependencies.
 
 ```
-$ git clone git@github.com:contentful/covid-19-site-template.git
+$ git clone https://github.com/contentful/covid-19-site-template.git
 $ yarn install
 ```
 
@@ -41,6 +39,8 @@ npm i -g contentful-cli
 ```
 contentful login
 ```
+
+For the next step, please refer to the Contentful account you have, as described in the `Requirements` section. You need the space ID of your contentful space. This can be found in any URL after logging into Contentful. Look for `https://app.contentful.com/spaces/<space-id>/...`, which should be a short alphanumeric code. Use this value whenever you see `<space-id>`.
 
 ```sh
 rm static/_redirects
