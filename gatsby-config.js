@@ -17,7 +17,7 @@ module.exports = {
     {
       resolve: 'gatsby-source-mathdroid-covid19',
       options: {
-        countries: [{ iso2: 'DE' }],
+        countries: [{ iso2: process.env.COVID_COUNTRY }],
       },
     },
     {
