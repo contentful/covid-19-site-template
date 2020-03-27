@@ -16,6 +16,10 @@ You must have a Contentful account to use this project. If you don’t have an a
 
 The following instructions are helpful is you have Yarn installed. If not, please install [Yarn](https://yarnpkg.com/en/docs/install).
 
+## Create with Stackbit
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/smnh/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive)
+
 ### Get the source code and install dependencies.
 
 ```
