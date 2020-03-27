@@ -18,7 +18,9 @@ The following instructions are helpful is you have Yarn installed. If not, pleas
 
 ## Create with Stackbit
 
-[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/smnh/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive)
+Use the "Create with Stackbit" button to easily deploy this project with just a few clicks. The GitHub project, the Contentful provisioning and the Netlify deploy will all be handled for you.
+
+[![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/contentful/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive)
 
 ### Get the source code and install dependencies.
 
