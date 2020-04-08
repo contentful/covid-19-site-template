@@ -1,6 +1,7 @@
 #!/usr/bin/env node
 const https = require('https');
 const fs = require('fs');
+require('dotenv').config()
 
 const options = {
   'method': 'GET',
