@@ -1,8 +1,8 @@
 # gatsby-covid-19-template
 
-Gatsby [Contentful](https://www.contentful.com) starter for creating a website for Covid-19 information 
+Gatsby [Contentful](https://www.contentful.com) starter for creating a website for Covid-19 information
 
-![The index page of the Covid-19 starter blog](./screenshot.png "The index page of the Covid-19 starter blog")
+![The index page of the Covid-19 starter blog](./screenshot.png 'The index page of the Covid-19 starter blog')
 
 If you have information to share during the Covid-19 pandemic, we’re here to help. This solution enables organizations to quickly and easily publish a website. We hope to help communities stay better informed and connected in the midst of closures and quarantine.
 
@@ -21,6 +21,8 @@ The following instructions are helpful is you have Yarn installed. If not, pleas
 Use the "Create with Stackbit" button to easily deploy this project with just a few clicks. The GitHub project, the Contentful provisioning and the Netlify deploy will all be handled for you.
 
 [![Create with Stackbit](https://assets.stackbit.com/badge/create-with-stackbit.svg)](https://app.stackbit.com/create?theme=https://github.com/contentful/covid-19-site-template&ssg=gatsby&cms=contentful&cmsExclusive)
+
+## Set Up Manually
 
 ### Get the source code and install dependencies.
 
@@ -56,7 +58,7 @@ rm static/_redirects
 yarn setup
 ```
 
-![Command line dialog of the yarn run setup command](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/setup.jpg "Command line dialog of the yarn run setup command")
+![Command line dialog of the yarn run setup command](https://rawgit.com/contentful-userland/gatsby-contentful-starter/master/setup.jpg 'Command line dialog of the yarn run setup command')
 
 This command will ask you for a space ID, and access tokens for the Contentful Management and Delivery API. It then imports the content model into the space you define and writes a config file (`.env`).
 
