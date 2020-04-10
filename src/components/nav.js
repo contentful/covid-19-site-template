@@ -9,6 +9,11 @@ const Nav = () => {
     {
       siteMetadata: allContentfulSiteMetadata {
         nodes {
+          siteLogo {
+            file {
+              url
+            }
+          }
           siteTitle
         }
       }
@@ -20,6 +25,7 @@ const Nav = () => {
       <div className="container mx-auto flex flex-wrap items-center justify-between">
         <div className="flex items-center flex-shrink-0 mr-6">
           <Link to="/">
+            { data.siteMetadata.nodes[0].siteLogo && <img src={`https:${data.siteMetadata.nodes[0].siteLogo.file.url}?h=60`} /> }
             <span className="text-xl font-semibold tracking-tight">
               {data.siteMetadata.nodes[0].siteTitle}
             </span>
