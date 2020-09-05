@@ -38,7 +38,7 @@
     "prettier": "^1.17.0",
     "rimraf": "^3.0.2",
     "tailwindcss": "^1.2.0",
-    "yargs-parser": "^17.0.0"
+    "yargs-parser": "^18.1.2"
   },
   "homepage": "https://github.com/contentful/covid-19-site-template",
   "keywords": [
